@@ -1,0 +1,29 @@
+{
+    "resources": {
+        "texts": {
+            "ok": "OK",
+            "empty": "--",
+            "broken_game": "Your last game was interrupted. You may finish it now.",
+            "limit_exceeded_msg": "The bet limit is exceeded. </br> Your maximum limit is: {0} </br> Please decrease the total bet and try again.",
+            "limit_is_too_low_msg": "The bet limit is too low. </br> Your minimum limit is: {0} </br> Please increase the total bet and try again.",
+            "balance.demo": "DEMO BALANCE",
+            "balance.real": "YOUR BALANCE",
+            "balance.game_bonus": "GAME BONUS",
+            "autoplay_confirm": "Do you want to start autoplay?",
+            "yes": "Yes",
+            "no": "No",
+
+            "no_suitable_gc" : "You have no Golden Chips suitable\nfor the requested bet.\nDo you want to use regular chips instead?",
+			"gc_popup" : "TAP TO CHOOSE A GOLDEN CHIP\nFROM THE GOLDEN CHIP TRAY\nAT THE BOTTOM OF THE TABLE",
+			"no_gc_in_autoplay" : "Golden Chips are not accepted in the Autoplay mode",
+			"clear_bet_confirm" : "Would you like to clear the bet?",
+			"info" : "Info",
+
+            "choose_limits"   : "Please choose your limits.",
+            "min"             : "MIN",
+            "max"             : "MAX",
+            "join"            : "Join",
+            "cancel"          : "Cancel"
+        }
+    }
+}

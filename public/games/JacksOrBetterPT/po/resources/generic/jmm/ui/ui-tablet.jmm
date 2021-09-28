@@ -1,0 +1,78 @@
+{
+    "resources": {
+        "images": {
+            "win_panel": {"url": "win_panel_tablet.png", "preload": "main-scene"}
+        },
+        "slices": {
+            "win_panel": {"image": "win_panel", "size": [1052, 304]}
+        }
+    },
+
+    "ui": {
+        "device_wrapper": {"type": "anchor", "layout": {"relative": true, "alignment": "center"}, "props": {"anchor.fit": 0}, "@O": {"landscape": {"ratio": null}, "portrait": {"ratio": [1024, 577]}}},
+        "controls_wrapper": {"type": "anchor", "layout": {"relative": true, "alignment": "center"}, "ratio": 3.03, "props": {"anchor.fit": "31.5 0 10 0"}, "content" :[
+            {"id": "controls.wrapper", "type": "anchor", "layout": {"relative": true, "alignment": "center"}, "ratio": 2.14, "props": {"anchor.fit": 0, "anchor.alignment": "center-right"}}
+        ]},
+        "background": {"type": "stack", "props": {"anchor.fit": 0}, "@O": {"landscape": {"layout": {"fillout": true}, "ratio": null}, "portrait": {"layout": {"fillout": false}, "ratio": [1024, 577]}}, "content": [
+            {"type": "image", "slice": "background_l"}
+        ]},
+
+        "you_win_txt": {"type": "anchor", "layout": {"relative": true, "alignment": "center"}, "visible": false, "props": {"anchor.alignment": "center", "anchor.fit": "0 1 35 0"}, "content": [
+            {"@P": "ui/win_panel_bg", "props": {"anchor.fit": "10 14 10 14"}, "ratio": [1052, 304]},
+            {"type": "image", "slice": "you_win_txt", "props": {"anchor.fit": "28 10 52 10"}},
+            {"id": "youwin.txt", "@P": "ui/label.def", "format": "center.win.value", "props": {"anchor.fit": "44 20 29 20"}}
+        ]},
+
+        "paytable.head.element": {"type": "vport", "group": "reversal.content", "layout": {"base": [222, 89]}, "size": [222, 89], "content": [
+            {"#ID": "plate", "group": "win_lines", "type": "image", "slice": "paytable_rect_l", "size": [234, 89], "opacity": 0},
+            {"#ID": "label", "@P": "ui/label.def", "alignment": "center-left", "format": "paytable.header", "text-group": "paytable-text-group", "size": [190, 62], "pos": [12, 15]}
+        ]},
+        "paytable.col.base": {"type": "vbox", "size": [65, 590], "snap": false},
+        "paytable.col.head": {"type": "vport", "layout": {"base": [222, 602]}, "content": [
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "royal_flush"},    "label": {"text": "royal_flush"}},     "pos": [0, -9]},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "straight_flush"}, "label": {"text": "straight_flush"}},  "pos": [0, 56]},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "four_of_a_kind"},    "label": {"text": "4_of_a_kind"}},     "pos": [0, 122]},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "full_house"},     "label": {"text": "full_house"}},      "pos": [0, 188]},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "flush"},          "label": {"text": "flush"}},           "pos": [0, 253]},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "straight"},       "label": {"text": "straight"}},        "pos": [0, 319]},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "three_of_a_kind"},    "label": {"text": "3_of_a_kind"}},     "pos": [0, 385]},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "two_pair"},       "label": {"text": "two_pair"}},        "pos": [0, 451]},
+            {"@P": {"#ID": "ui/paytable.head.element", "label": {"text": "jacks_or_better"}, "plate": {"id": "jacks_or_better", "size": [234, 91]}}, "pos": [0, 518]}
+        ]},
+        "paytable.data.container": {"type": "vport", "snap": false, "size": [342, 590], "layout": {"base": [342, 590]}, "pos": [223, 5]},
+        "selection.col": {"group": "selectable", "type": "image", "size": [69,594], "cursor": "hand", "slice": "paytable_l_selection", "opacity": 0},
+        "selection.grid": {"@P": "ui/paytable.data.container", "content": [
+            {"@P": "ui/selection.col", "pos": ["${69*0}", -2]},
+            {"@P": "ui/selection.col", "pos": ["${69*1}", -2]},
+            {"@P": "ui/selection.col", "pos": ["${69*2}", -2]},
+            {"@P": "ui/selection.col", "pos": ["${69*3}", -2]},
+            {"@P": "ui/selection.col", "pos": ["${69*4}", -2], "slice": "paytable_l_selection_right"}
+        ]},
+        "selectable_paytable": {"id": "selectable_paytable", "type": "selectable_paytable", "layout": {"type": "stack", "alignment": "center-left"},
+                "props": {"anchor.alignment": "center-left", "anchor.fit": "31.5 71.5 10 0"}, "ratio": 0.86, "content": [
+            {"type": "vport", "layout": {"base": [570, 657]}, "content": [
+                {"group": "reversal.content", "type": "vport", "layout": {"base": [570, 657]}, "content": [
+                    {"id": "top_bg", "type": "panel", "background": "paytable_top_bg", "size": [600, 79], "pos": [-30, -62]},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"slice": "p_x1_norm"}, "enabled": {"slice": "p_x1_high"}}, "pos": ["${225+69*0}", -56]},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"slice": "p_x2_norm"}, "enabled": {"slice": "p_x2_high"}}, "pos": ["${225+69*1}", -56]},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"slice": "p_x3_norm"}, "enabled": {"slice": "p_x3_high"}}, "pos": ["${225+69*2}", -56]},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"slice": "p_x4_norm"}, "enabled": {"slice": "p_x4_high"}}, "pos": ["${225+69*3}", -56]},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"slice": "p_x5_norm"}, "enabled": {"slice": "p_x5_high"}}, "pos": ["${225+69*4}", -56]}
+                ]},
+                {"id": "background", "type": "image", "slice": "paytable_l"},
+                {"group": "reversal.content", "type": "vport", "layout": {"base": [570, 657]}, "size": [570, 657], "content": [
+                    {"group": "reversal.content", "@P": "ui/paytable.col.head", "size": [222, 602]},
+                    {"group": "reversal.content", "@P": "ui/paytable.data.container", "content": [
+                        {"@P": "ui/paytable.col.1", "pos": ["${69*0+3}", 0]},
+                        {"@P": "ui/paytable.col.2", "pos": ["${69*1+3}", 0]},
+                        {"@P": "ui/paytable.col.3", "pos": ["${69*2}", 0]},
+                        {"@P": "ui/paytable.col.4", "pos": ["${69*3}", 0]},
+                        {"@P": "ui/paytable.col.5", "pos": ["${69*4}", 0]}
+                    ]},
+                    {"group": "reversal.content", "@P": "ui/selection.grid"}
+                ]},
+                {"@P": "ui/limits", "pos": [0,616], "size": [570, 28]}
+            ]}
+        ]}
+    }
+}

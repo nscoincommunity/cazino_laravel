@@ -1,0 +1,26 @@
+{
+    "resources": {
+
+        "audio":{
+            "pools":{
+                "sfx":   {"url": {"audio/mpeg": "Jacks_or_better_soundpack_13.02.18.mp3", "audio/ogg": "Jacks_or_better_soundpack_13.02.18.ogg"}, "polyphony": 5, "preload": "main-scene"},
+                "music":   {"url": {"audio/mpeg": "Jacks_or_better_soundpack_13.02.18.mp3", "audio/ogg": "Jacks_or_better_soundpack_13.02.18.ogg"}, "polyphony": 2, "preload": "main-scene"}
+            },
+
+            "sounds": {
+                "bet_one_max_button":  {"frame": [2000, 387],  "mono": "force"},
+                "double_button":       {"frame": [2687, 1701], "mono": "force"},
+                "double_lost":         {"frame": [4689, 640],  "mono": "force"},
+                "plus_button":         {"frame": [5629, 304],  "mono": "force"},
+                "minus_button":        {"frame": [6233, 315],  "mono": "force"},
+                "unhold_button":       {"frame": [6848, 438],  "mono": "force"},
+                "hold_button":         {"frame": [7586, 354],  "mono": "force"},
+                "deal_button":         {"frame": [8241, 308],  "mono": "force"},
+                "win":                 {"frame": [8849, 828],  "mono": "force"},
+                "generic_button":      {"frame": [9977, 285],  "mono": "force"},
+                "card_flip":           {"frame": [10563, 319],  "mono": "force"},
+                "card_flip_all":       {"frame": [11182, 306],  "mono": "force"}
+            }
+        }
+    }
+}

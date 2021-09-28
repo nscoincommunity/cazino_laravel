@@ -1,0 +1,112 @@
+{
+    "resources": {
+        "slices": {
+            "win_panel": {"image": "atlas", "size": [657, 190], "pos": [213, 3]},
+            
+            "paytable_p_selection":       {"image": "atlas", "size": [101, 359], "pos": [  3, 3], "insets": "11 8 8 8"},
+            "paytable_p_selection_right": {"image": "atlas", "size": [101, 358], "pos": [108, 3], "insets": "11 8 7 8", "border": "0 25"},
+            "paytable_rect_p":            {"image": "atlas", "size": [237, 55], "pos": [323, 197]},
+            "paytable_rect_p_rounded":    {"image": "atlas", "size": [237, 58], "pos": [213, 266]},
+            "paytable_rect_p_rounded_f" : {"image": "atlas", "size": [237, 58], "pos": [213, 266], "flip": "Y"},
+            "paytable_top_bg_p":          {"image": "atlas", "size": [106, 65], "pos": [213, 197], "border": "0 15"},
+            
+            "p_1x_norm": {"image": "header_multipliers", "size": [24, 17], "pos": [32, 91], "insets": "-1 -1.5"},
+            "p_2x_norm": {"image": "header_multipliers", "size": [24, 17], "pos": [3,  93], "insets": "-1 -1.5"},
+            "p_3x_norm": {"image": "header_multipliers", "size": [25, 17], "pos": [34, 49], "insets": -1},
+            "p_4x_norm": {"image": "header_multipliers", "size": [25, 17], "pos": [34, 70], "insets": -1},
+            "p_5x_norm": {"image": "header_multipliers", "size": [25, 17], "pos": [3,  72], "insets": -1},
+            "p_1x_high": {"image": "header_multipliers", "size": [27, 19], "pos": [3, 3]},
+            "p_2x_high": {"image": "header_multipliers", "size": [27, 19], "pos": [34, 3]},
+            "p_3x_high": {"image": "header_multipliers", "size": [27, 19], "pos": [3, 26]},
+            "p_4x_high": {"image": "header_multipliers", "size": [27, 19], "pos": [34, 26]},
+            "p_5x_high": {"image": "header_multipliers", "size": [27, 19], "pos": [3, 49]}
+        }
+    },
+
+    "ui": {
+        "device_wrapper": {"type": "anchor", "layout": {"relative": true, "alignment": "center"}, "props": {"anchor.fit": 0}},
+        "controls_wrapper": {"type": "anchor", "layout": {"relative": true, "alignment": "center-right"}, "@O": {
+            "landscape": {"props": {"anchor.fit": "31.5 0 10 0"}, "ratio": 3.03},
+            "portrait": {"props": {"anchor.fit": "59 0 13 1"}, "ratio": 2.14}
+        }, "content": [
+            {"id": "controls.wrapper", "type": "anchor", "layout": {"relative": true, "alignment": "center"}, "ratio": 2.14, "@O": {
+                "landscape": {"props": {"anchor.fit": 0, "anchor.alignment": "center-right"}},
+                "portrait":  {"props": {"anchor.fit": 0, "anchor.alignment": "center"}}
+            }}
+        ]},
+        "background": {"type": "stack", "layout": {"fillout": true}, "props": {"anchor.fit": 0}, "content": [
+            {"type": "image", "@O": {"landscape": {"slice": "background_l"}, "portrait": {"slice": "background_p"}}}
+        ]},
+        "you_win_txt": {"type": "anchor", "layout": {"relative": true, "alignment": "center"}, "visible": false, "props": {"anchor.alignment": "center", "anchor.fit": "0 1 35 0"}, "content": [
+            {"@P": "ui/win_panel_bg", "props": {"anchor.fit": "11 9 11 9"}, "ratio": [657, 190]},
+            {"type": "image", "slice": "you_win_txt", "@O": {"landscape": {"props": {"anchor.fit": "28 10 53 10"}}, "portrait": {"props": {"anchor.fit": "22 20 55 20"}}}},
+            {"id": "youwin.txt", "@P": "ui/label.def", "format": "center.win.value", "@O": {"landscape": {"props": {"anchor.fit": "44 20 29 20"}}, "portrait": {"props": {"anchor.fit": "45 32 27 32"}}}}
+        ]},
+        "paytable.head.element": {"type": "vport", "group": "reversal.content", "@O": {
+                "landscape": {"layout": {"base": [222, 89]}, "size": [222, 89]},
+                "portrait":  {"layout": {"base": [237, 55]}, "size": [237, 55]}}, "content": [
+            {"#ID": "plate", "group": "win_lines", "type": "image", "opacity": 0, "@O": {
+                    "landscape": {"slice": "paytable_rect_l", "size": [234, 89], "pos": [0, 0]},
+                    "portrait":  {"slice": "paytable_rect_p", "size": [237, 55], "pos": [0, 0]}}},
+            {"#ID": "label", "@P": "ui/label.def", "format": "paytable.header", "alignment": "center-left", "@O": {
+                    "landscape": {"size": [190, 62], "text-group": "paytable-text-group", "pos": [12, 15]},
+                    "portrait":  {"size": [175, 21], "text-group": "paytable-text-group", "pos": [37, 19]}}}
+        ]},
+        "paytable.col.base": {"type": "vbox", "@O": {"landscape": {"size": [65, 590]}, "portrait": {"size": [80, 336]}}, "snap": false},
+        "paytable.col.head": {"type": "vport", "@O": {"landscape": {"layout": {"base": [222, 602]}}, "portrait": {"layout": {"base": [222, 343]}}}, "content": [
+            {"@P": {"#ID": "ui/paytable.head.element", "label": {"text": "jacks_or_better"}, "plate": {"id": "jacks_or_better", "@O": {
+                "landscape": {"slice": "paytable_rect_l", "size": [234, 89]},
+                "portrait":  {"slice": "paytable_rect_p_rounded", "size": [237, 58]}}}}, "@O": {"landscape": {"pos": [0, 518]}, "portrait": {"pos": [-8, 291]}}},
+            {"@P": {"#ID": "ui/paytable.head.element", "label": {"text": "royal_flush"}, "plate": {"id": "royal_flush", "@O": {
+                    "landscape": {"slice": "paytable_rect_l", "size": [234, 89]},
+                    "portrait":  {"slice": "paytable_rect_p_rounded_f", "size": [237, 58]}}}}, "@O": {"landscape": {"pos": [0, -9]}, "portrait": {"pos": [-8, -8]}}},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "straight_flush"}, "label": {"text": "straight_flush"}}, "@O": {"landscape": {"pos": [0, 56]},  "portrait": {"pos": [-8, 31]}}},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "four_of_a_kind"}, "label": {"text": "4_of_a_kind"}},    "@O": {"landscape": {"pos": [0, 122]}, "portrait": {"pos": [-8, 68]}}},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "full_house"},     "label": {"text": "full_house"}},     "@O": {"landscape": {"pos": [0, 188]}, "portrait": {"pos": [-8, 105]}}},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "flush"},          "label": {"text": "flush"}},          "@O": {"landscape": {"pos": [0, 253]}, "portrait": {"pos": [-8, 143]}}},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "straight"},       "label": {"text": "straight"}},       "@O": {"landscape": {"pos": [0, 319]}, "portrait": {"pos": [-8, 180]}}},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "three_of_a_kind"},"label": {"text": "3_of_a_kind"}},    "@O": {"landscape": {"pos": [0, 385]}, "portrait": {"pos": [-8, 217]}}},
+            {"@P": {"#ID": "ui/paytable.head.element", "plate": {"id": "two_pair"},       "label": {"text": "two_pair"}},       "@O": {"landscape": {"pos": [0, 451]}, "portrait": {"pos": [-8, 254]}}}
+        ]},
+        "paytable.data.container": {"type": "vport", "snap": false, "@O": {
+                "landscape": {"size": [342, 590], "layout": {"base": [342, 590]}, "pos": [223, 5]},
+                "portrait":  {"size": [404, 336], "layout": {"base": [404, 336]}, "pos": [220, 4]}}
+        },
+        "selection.col": {"group": "selectable", "type": "image", "@O": {"landscape": {"size": [69,594], "slice": "paytable_l_selection"}, "portrait": {"size": [83,342], "slice": "paytable_p_selection"}}, "opacity": 0},
+        "selection.grid": {"@P": "ui/paytable.data.container", "content": [
+            {"@P": "ui/selection.col", "@O": {"landscape": {"pos": ["${69*0}", -2]}, "portrait": {"pos": ["${81*0}", -2]}}},
+            {"@P": "ui/selection.col", "@O": {"landscape": {"pos": ["${69*1}", -2]}, "portrait": {"pos": ["${81*1}", -2]}}},
+            {"@P": "ui/selection.col", "@O": {"landscape": {"pos": ["${69*2}", -2]}, "portrait": {"pos": ["${81*2}", -2]}}},
+            {"@P": "ui/selection.col", "@O": {"landscape": {"pos": ["${69*3}", -2]}, "portrait": {"pos": ["${81*3}", -2]}}},
+            {"@P": "ui/selection.col", "@O": {"landscape": {"pos": ["${69*4}", -2], "slice": "paytable_l_selection_right"}, "portrait": {"pos": ["${81*4}", -2], "slice": "paytable_p_selection_right"}}}
+        ]},
+        "multiplier_title": {"@O": {"landscape": {"size": [69, 60]}, "portrait": {"size": [80, 29]}}},
+        "selectable_paytable": {"id": "selectable_paytable", "type": "selectable_paytable", "layout": {"type": "stack"}, "@O": {
+                "landscape": {"layout": {"alignment": "center-left"}, "props": {"anchor.alignment": "center-left", "anchor.fit": "31.5 71.5 10 0"}, "ratio": 0.86},
+                "portrait": {"layout": {"alignment": "center"}, "props": {"anchor.alignment": "center", "anchor.fit": "24 1 45 1"}, "ratio": 1.8282}}, "content": [
+            {"type": "vport", "@O": {"landscape": {"layout": {"base": [570, 657]}}, "portrait": {"layout": {"base": [628, 343]}}}, "content": [
+                {"group": "reversal.content", "type": "vport", "@O": {"landscape": {"layout": {"base": [570, 657]}}, "portrait": {"layout": {"base": [628, 343]}}}, "content": [
+                    {"id": "top_bg", "type": "panel", "@O": {"landscape": {"size": [600, 79], "pos": [-30, -62], "background": "paytable_top_bg"}, "portrait": {"size": [628, 65], "pos": [0, -34], "background": "paytable_top_bg_p"}}},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"@O": {"landscape": {"slice": "p_x1_norm"}, "portrait": {"slice": "p_1x_norm"}}}, "enabled": {"@O": {"landscape": {"slice": "p_x1_high"}, "portrait": {"slice": "p_1x_high"}}}}, "@O": {"landscape": {"pos": ["${225+69*0}", -56]}, "portrait": {"pos": ["${221+80*0}", -29]}}},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"@O": {"landscape": {"slice": "p_x2_norm"}, "portrait": {"slice": "p_2x_norm"}}}, "enabled": {"@O": {"landscape": {"slice": "p_x2_high"}, "portrait": {"slice": "p_2x_high"}}}}, "@O": {"landscape": {"pos": ["${225+69*1}", -56]}, "portrait": {"pos": ["${221+80*1}", -29]}}},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"@O": {"landscape": {"slice": "p_x3_norm"}, "portrait": {"slice": "p_3x_norm"}}}, "enabled": {"@O": {"landscape": {"slice": "p_x3_high"}, "portrait": {"slice": "p_3x_high"}}}}, "@O": {"landscape": {"pos": ["${225+69*2}", -56]}, "portrait": {"pos": ["${221+80*2}", -29]}}},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"@O": {"landscape": {"slice": "p_x4_norm"}, "portrait": {"slice": "p_4x_norm"}}}, "enabled": {"@O": {"landscape": {"slice": "p_x4_high"}, "portrait": {"slice": "p_4x_high"}}}}, "@O": {"landscape": {"pos": ["${225+69*3}", -56]}, "portrait": {"pos": ["${221+80*3}", -29]}}},
+                    {"@P": {"#ID": "ui/multiplier_title", "disabled": {"@O": {"landscape": {"slice": "p_x5_norm"}, "portrait": {"slice": "p_5x_norm"}}}, "enabled": {"@O": {"landscape": {"slice": "p_x5_high"}, "portrait": {"slice": "p_5x_high"}}}}, "@O": {"landscape": {"pos": ["${225+69*4}", -56]}, "portrait": {"pos": ["${221+80*4}", -29]}}}
+                ]},
+                {"id": "background", "type": "image", "@O": {"landscape": {"slice": "paytable_l"}, "portrait": {"slice": "paytable_p"}}},
+                {"group": "reversal.content", "type": "vport", "size": [570, 657], "layout": {"base": [570, 657]}, "content": [
+                    {"group": "reversal.content", "@P": "ui/paytable.col.head", "@O": {"landscape": {"pos": [0,0], "size": [222, 602]}, "portrait": {"pos": [0,0], "size": [222, 343]}}},
+                    {"group": "reversal.content", "@P": "ui/paytable.data.container", "content": [
+                        {"@P": "ui/paytable.col.1", "@O": {"landscape": {"pos": ["${69*0+3}", 0]}, "portrait": {"pos": ["${80*0}", 0]}}},
+                        {"@P": "ui/paytable.col.2", "@O": {"landscape": {"pos": ["${69*1+3}", 0]}, "portrait": {"pos": ["${80*1}", 0]}}},
+                        {"@P": "ui/paytable.col.3", "@O": {"landscape": {"pos": ["${69*2}",   0]}, "portrait": {"pos": ["${80*2}", 0]}}},
+                        {"@P": "ui/paytable.col.4", "@O": {"landscape": {"pos": ["${69*3}",   0]}, "portrait": {"pos": ["${80*3}", 0]}}},
+                        {"@P": "ui/paytable.col.5", "@O": {"landscape": {"pos": ["${69*4}",   0]}, "portrait": {"pos": ["${80*4}", 0]}}}
+                    ]},
+                    {"group": "reversal.content", "@P": "ui/selection.grid"}
+                ]},
+                {"@P": "ui/limits", "@O": {"landscape": {"pos": [0,616], "size": [570, 28]}, "portrait": {"size": [400, 25], "pos": [114,-62]}}}
+            ]}
+        ]}
+    }
+}

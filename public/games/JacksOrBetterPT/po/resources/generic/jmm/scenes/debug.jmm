@@ -1,0 +1,61 @@
+{
+    "ui": {
+        "debug.card": {"group": "cards", "type": "debug-card", "layout": {"type": "anchor", "relative": true}, "red-format": "debug.card.red", "black-format": "debug.card.black", "suit": "clubs", "ratio": 0.8, "content": [
+            {"id": "_container", "type": "anchor", "layout": {"relative": true}, "props": {"anchor.fit": "5 5 0 5"}, "background": {"fill": "#000, #fff", "radius": "10, 10", "insets": "0, 1"}, "content": [
+                {"id": "rank", "@P": "ui/label.def", "props": {"anchor.fit": "5 35 60 10"}, "alignment": "center-left"},
+                {"id": "suit", "@P": "ui/label.def", "props": {"anchor.fit": "20 5 -5 5"}}
+            ]}
+        ]},
+        "debug.suit_switch": {"@P": "ui/debug.card", "group": "suit_switch", "ratio": 1.1, "content": [
+            {"id": "_container", "props": {"anchor.fit": "10 5 0 5"}, "background": {"radius": "0, 0"}, "content": [
+                {"id": "rank", "visible": false},
+                {"id": "suit", "props": {"anchor.fit": "0"}}
+            ]}
+        ]},
+        "debug.cards.btn": {"type": "anchor", "layout": {"relative": true}, "background": {"fill": "#000, #ccc", "insets": "0, 1"}, "content": [
+            {"#ID": "label", "@P": "ui/label.def", "format": "debug.button", "props": {"anchor.fit": "20 5"}}
+        ]}
+    },
+    "scenes": {
+        "debug-cards-scene": {"type": "anchor", "layout": {"relative": true, "alignment": "center"}, "props": {"anchor.fit": 0}, "background": "#80000", "visible": false, "content": [
+            {"type": "anchor", "layout": {"relative": true}, "ratio": 1.2, "background": "#333", "@O": {"landscape": {"props": {"anchor.fit": "10"}}, "portrait": {"props": {"anchor.fit": "10 3"}}}, "content": [
+                {"type": "anchor", "layout": {"relative": true}, "props": {"anchor.fit": "0 87 0 0"}, "background": {"fill": "#a0a0a0, #1f1f1f", "insets": "0, 0 1 0 0"}, "content": [
+                    {"type": "panel", "layout": {"type": "cvbox", "alignment": "top-center"}, "props": {"anchor.fit": "0 0 50 0"}, "content": [
+                        {"@P": "ui/debug.suit_switch", "suit": "clubs"},
+                        {"@P": "ui/debug.suit_switch", "suit": "hearts"},
+                        {"@P": "ui/debug.suit_switch", "suit": "spades"},
+                        {"@P": "ui/debug.suit_switch", "suit": "diamonds"}
+                    ]}
+                ]},
+                {"type": "anchor", "layout": {"relative": true}, "props": {"anchor.fit": "0 0 0 13"}, "content": [
+                    {"type": "panel", "layout": {"type": "cvbox"}, "props": {"anchor.fit": "0 0 25 0"}, "content": [
+                        {"type": "panel", "layout": {"type": "chbox", "alignment": "center-left"}, "ratio": 4, "content": [
+                            {"@P": "ui/debug.card", "rank": "2"},
+                            {"@P": "ui/debug.card", "rank": "3"},
+                            {"@P": "ui/debug.card", "rank": "4"},
+                            {"@P": "ui/debug.card", "rank": "5"},
+                            {"@P": "ui/debug.card", "rank": "6"}
+                        ]},
+                        {"type": "panel", "layout": {"type": "chbox", "alignment": "center-left"}, "ratio": 4, "content": [
+                            {"@P": "ui/debug.card", "rank": "7"},
+                            {"@P": "ui/debug.card", "rank": "8"},
+                            {"@P": "ui/debug.card", "rank": "9"},
+                            {"@P": "ui/debug.card", "rank": "10"},
+                            {"@P": "ui/debug.card", "rank": "J"}
+                        ]},
+                        {"type": "panel", "layout": {"type": "chbox", "alignment": "center-left"}, "ratio": 4, "content": [
+                            {"@P": "ui/debug.card", "rank": "Q"},
+                            {"@P": "ui/debug.card", "rank": "K"},
+                            {"@P": "ui/debug.card", "rank": "A"}
+                        ]}
+                    ]},
+                    {"id": "text_field", "@P": "ui/label.def", "alignment": "center-right", "background": {"fill": "#000, #b39a5e", "insets": "0, 1"}, "text-pad": "0 5", "props": {"anchor.fit": "78 3 15 3"}},
+                    {"id": "btn.clear", "@P": {"#ID": "ui/debug.cards.btn", "label": {"text": "Clear"}}, "props": {"anchor.fit": "91 80 3 3"}},
+                    {"id": "btn.undo", "@P": {"#ID": "ui/debug.cards.btn", "label": {"text": "Undo"}}, "props": {"anchor.fit": "91 62 3 21"}},
+                    {"id": "btn.ok", "@P": {"#ID": "ui/debug.cards.btn", "label": {"text": "OK"}}, "props": {"anchor.fit": "91 21 3 62"}},
+                    {"id": "btn.cancel", "@P": {"#ID": "ui/debug.cards.btn", "label": {"text": "Cancel"}}, "props": {"anchor.fit": "91 3 3 80"}}
+                ]}
+            ]}
+        ]}
+    }
+}

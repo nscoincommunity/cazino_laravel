@@ -1,0 +1,44 @@
+{
+    "ui": {
+        "bottom-panel": {"id": "bottom_container", "type": "stack", "layout": {"alignment": "bottom-center"}, "content": [
+            {"id": "_middle_container", "type": "anchor", "layout": {"relative": true}, "content": [
+                {"id": "bottom_panel", "type": "po-bottom-panel", "layout": {"type": "stack"}, "props": {"anchor.fit": 0}, "state": "regular", "content": {
+
+                    "regular": {"id": "_content", "type": "anchor", "layout": {"relative": true}, "content": [
+                        {"type": "vport", "layout": {"base": [216, 68]}, "size": [216, 68], "props": {"anchor.alignment": "center-left", "anchor.fit": "0 83.33 0 0"}, "content": [
+                            {"id": "balance_title", "@P": "ui/bp.title", "pos": [0, 11], "size": [216, 20], "text": "balance.demo"},
+                            {"id": "balance_value", "@P": "ui/bp.value", "pos": [0, 29], "size": [216, 28]}
+                        ]},
+                        {"type": "vport", "layout": {"base": [216, 68]}, "size": [216, 68], "props": {"anchor.alignment": "center-right", "anchor.fit": "0 0 0 83.33"}, "content": [
+                            {"id": "total_bet_title", "@P": "ui/bp.title", "pos": [0, 11], "size": [216, 20], "text": "total_bet"},
+                            {"id": "total_bet_value", "@P": "ui/bp.value", "pos": [0, 29], "size": [216, 28]}
+                        ]},
+                        {"type": "vport", "layout": {"base": [216, 68]}, "size": [216, 68], "props": {"anchor.alignment": "center-right", "anchor.fit": "0 16.66 0 66.66"}, "content": [
+                            {"id": "line_bet_title", "@P": "ui/bp.title", "pos": [0, 11], "size": [216, 20], "text": "line_bet"},
+                            {"id": "line_bet_value", "@P": "ui/bp.value", "pos": [0, 29], "size": [216, 28]}
+                        ]}
+                    ]}
+                }},
+                {"id": "messages", "type": "message-panel", "layout": {"type": "anchor", "relative": true}, "state": "regular", "props": {"anchor.fit": "0 33.33 0 33.33"}, "content": {
+                    "select_the_cards": {"@P": "ui/bp.msg", "text": "select_the_cards"},
+                    "select_the_card": {"@P": "ui/bp.msg", "text": "select_the_card"},
+                    "select_double": {"@P": "ui/bp.msg", "text": "select_double"},
+                    "enter_your_bet": {"@P": "ui/bp.msg", "text": "enter_your_bet"}
+                }}
+            ]}
+        ]},
+
+        "double-controls": {"id": "controls.double", "@P": "ui/controls.base", "snap": false, "visible": false, "content": [
+            {"@P": {"#ID": "ui/btn.double.container", "btn.base": {"id": "btn.double"     }, "btn.txt": {"id": "btn.double.txt"     }}, "size": [193, 66], "pos": [0, -4]},
+            {"@P": {"#ID": "ui/btn.double.container", "btn.base": {"id": "btn.double_half"}, "btn.txt": {"id": "btn.double_half.txt"}}, "size": [194, 66], "pos": [199, -4]},
+            {"@P": {"#ID": "ui/btn.double.container", "btn.base": {"id": "btn.collect"    }, "btn.txt": {"id": "btn.collect.txt"    }}, "size": [193, 66], "pos": [399, -4]}
+        ]},
+
+        "bet-controls": {"id": "controls.regular", "@P": "ui/controls.base", "content": [
+            {"@P": "ui/btn.bet-options.container", "size": [230, 60], "layout": {"base": [570, 147]}, "pos": [0, 0]},
+            {"@P": "ui/btn.deal.container"       , "size": [147, 60], "pos": [445, 0]},
+            {"@P": "ui/btn.bet-max.container"    , "size": [100, 60], "pos": [340, 0]},
+            {"@P": "ui/btn.bet-one.container"    , "size": [100, 60], "pos": [235,0] }
+        ]}
+    }
+}

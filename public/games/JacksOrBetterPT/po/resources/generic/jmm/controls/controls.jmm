@@ -1,0 +1,62 @@
+{
+    "ui": {
+        "blocking-panel": {"id": "blocking_panel", "type": "panel", "background": "#c5000000", "visible": false, "propagative": false},
+
+        "label.def": {"type": "label", "text-fit": [true, true], "alignment": "center"},
+        "bc.container": {"type": "vport", "bias": "ver"},
+        "bo.value": {"@P": "ui/label.def", "format": "bet.value", "pos": [28, 26], "size": [178, 34]},
+
+        "bp.title": {"@P": "ui/label.def", "format": "bet.title",  "size": [234, 20], "pos": [8, 11]},
+        "bp.value": {"@P": "ui/bo.value", "pos": [8, 29]},
+        "bp.msg": {"@P": "ui/label.def", "format": "bet.value", "text-group": "bottom-bar-group", "props": {"anchor.fit": "18 1 18 1"}},
+
+        "btn.container": {"type": "anchor", "content": [
+            {"#ID": "btn.base", "type": "ibutton", "cursor": "hand", "format": "btn.format", "props": {"anchor.fit": 0}},
+            {"#ID": "btn.txt", "@P": "ui/label.def", "group": "button.labels", "text-pad": "10 0 4 0", "text-group": "btn-text-group", "text-fit": [true,true,false], "props": {"anchor.fit": "5 11"}}
+        ]},
+        "btn.double.container":  {"@P": {"#ID": "ui/btn.container",
+            "btn.base": {"slice": "btn.collect_double"},
+            "btn.txt": {"text-pad": "5 0", "text-group": "btn-double-text-group"}
+        }},
+
+        "btn.bet-options.container":  {"id": "bet_options", "type": "bet-options-panel", "layout": {"base": [570, 147]}, "content": [
+            {"id": "coin_size.minus", "type": "ibutton", "slice": "btn.minus", "cursor": "hand", "size": [179,147]},
+            {"id": "coin_size.field", "type": "image", "slice": "value_field", "pos": [188, 25], "size": [196, 103]},
+            {"id": "coin_size.value", "@P": "ui/label.def", "format": "bet.value", "pos": [195, 50], "size": [180, 55]},
+            {"id": "coin_size.plus",  "type": "ibutton", "slice": "btn.plus", "cursor": "hand", "pos": [391,0], "size": [179,147]}
+        ]},
+        "btn.bet-one.container":  {"@P": {"#ID": "ui/btn.container",
+            "btn.base": {"id": "btn.bet-one", "slice": "btn.bet_one_max"},
+            "btn.txt": {"id": "btn.bet-one.txt", "text": "btn.bet_one"}
+        }},
+        "btn.bet-max.container":  {"@P": {"#ID": "ui/btn.container",
+            "btn.base": {"id": "btn.bet-max", "slice": "btn.bet_one_max"},
+            "btn.txt": {"id": "btn.bet-max.txt", "text": "btn.bet_max"}
+        }},
+        "btn.deal.container":  {"@P": {"#ID": "ui/btn.container",
+            "btn.base": {"id": "btn.deal", "slice": "btn.deal", "format": "btn.format.deal", "disabled": true},
+            "btn.txt": {"id": "btn.deal.txt", "text": "btn.deal", "props": {"anchor.fit": 11}}
+        }},
+
+        "card.container":  {"group": "card_wrappers", "type": "card-wrapper", "layout": {"base": [124, 193]}, "snap": false, "content": [
+            {"id": "card_background", "type": "stack", "background": "#000000", "size": [124, 193], "cursor": "hand", "opacity": 0, "disabled": true},
+            {"id": "image_card", "type": "card", "slice": "card.back", "size": [124, 193], "cursor": "hand"},
+            {"id": "card_fade", "type": "image", "slice": "card.fade", "size": [124, 193], "cursor": "hand", "visible": false, "propagative": false},
+            {"id": "hold_btn", "type": "itoggle", "slice": "card.hold", "slice.selected": "card.held", "cursor": "hand", "visible": false, "text-fit": [true,true,false],
+                    "text-pad": "14 12 10 12", "format": "txt.hold", "text": "hold", "size": [124, 55], "pos": [0,145], "disabled": true, "propagative": false}
+        ]},
+
+        "controls.base": {"type": "vport", "size": [592, 60], "layout": {"base": [592, 60]}, "props": {"anchor.alignment": "baseline-center", "anchor.fit": "70 1 7.5 0"}},
+
+        "cards": {"type": "hbox", "layout": {"alignment": "center", "spacing": 5}, "ratio": 3.2656, "snap": false, "props": {"anchor.alignment": "center", "anchor.fit": "0 1 35 0"}, "content": [
+            {"id": "0", "@P": "ui/card.container"},
+            {"id": "1", "@P": "ui/card.container"},
+            {"id": "2", "@P": "ui/card.container"},
+            {"id": "3", "@P": "ui/card.container"},
+            {"id": "4", "@P": "ui/card.container"}
+        ]},
+
+        "label.left": {"@P": "ui/label.def", "alignment": "center-left"},
+        "win_panel_bg": {"id": "bg", "type": "panel", "background": "win_panel", "opacity": 0.75}
+    }
+}

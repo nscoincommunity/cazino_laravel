@@ -1,0 +1,28 @@
+{
+    "config": {
+        "allow_debug": "false",
+        
+        "game_code": "po",
+        "server_type": "casino",
+        "supported_orientation": "both",
+        "wait_client_state_notification": true,
+        "supported_languages": ["bg", "ch", "cs", "da", "de", "el", "en", "es", "es-mx", "et", "fi", "fr", "it", "ja", "ko", "ms", "nl", "pl", "ro", "ru", "sk", "sv", "th", "zh-cn"],
+
+        "coin_sizes": [1, 2, 5, 10, 50, 100, 500, 1000, 2500, 5000, 10000],
+        "win_ranges": [],
+
+        "paytable":[
+            {"win": "royal_flush",         "multipliers": [250, 500, 750, 1000, 4000]},
+            {"win": "straight_flush",      "multipliers": [50, 100, 150, 200, 250]},
+            {"win": "four_of_a_kind",      "multipliers": [25, 50, 75, 100, 125]},
+            {"win": "full_house",          "multipliers": [9, 18, 27, 36, 45]},
+            {"win": "flush",               "multipliers": [6, 12, 18, 24, 30]},
+            {"win": "straight",            "multipliers": [4, 8, 12, 16, 20]},
+            {"win": "three_of_a_kind",     "multipliers": [3, 6, 9, 12, 15]},
+            {"win": "two_pair",            "multipliers": [2, 4, 6, 8, 10]},
+            {"win": "jacks_or_better",     "multipliers": [1, 2, 3, 4, 5]}
+        ],
+
+        "card_back_slice": "card_back"
+    }
+}

@@ -1,0 +1,141 @@
+{
+    "resources": {
+        "images": {
+            "background_l": {"url": "background_l.jpg", "preload": "main-scene"},
+            "background_p": {"url": "background_p.jpg", "preload": "main-scene"},
+            "buttons": {"url": "buttons.png", "preload": "main-scene"},
+            "atlas_2": {"url": "atlas_2.png", "preload": "main-scene"},
+            "atlas":   {"url": "atlas.png",   "preload": "main-scene"},
+            "header_multipliers": {"url": "header_multipliers.png", "preload": "main-scene"},
+
+            "cards-0":   {"url": "cards/cards-0.png",   "preload": "main-scene"},
+            "cards-1":   {"url": "cards/cards-1.png",   "preload": "main-scene"},
+            "card_back": {"url": "cards/back.png",      "preload": "main-scene"},
+            "card_fade": {"url": "cards/card_fade.png", "preload": "main-scene"},
+            "logo":      {"url": "logo.png",            "preload": "main-scene"},
+
+            "you_win_txt": {"url": "../../translations/images/you_win_${lang}.png", "preload": "main-scene"}
+        },
+
+        "slices": {
+            "background_l": {"image": "background_l", "size": [1024, 577]},
+            "background_p": {"image": "background_p", "size": [577, 1024]},
+
+            "paytable_l":           {"image": "atlas_2", "size": [570, 602], "pos": [3, 3]},
+            "paytable_l_selection": {"image": "atlas_2", "size": [89, 618], "pos": [733, 305], "insets": "12"},
+            "paytable_l_selection_right": {"image": "atlas_2", "size": [94, 618], "pos": [635, 305], "insets": "12", "border": "0 25"},
+            "paytable_p":           {"image": "atlas_2", "size": [628, 343], "pos": [3, 609]},
+            "paytable_rect_l":         {"image": "atlas_2", "size": [234, 89], "pos": [635, 927]},
+            "paytable_top_bg": {"image": "atlas_2", "size": [148, 79], "pos": [873, 909], "border": "0 17"},
+
+            "logo":       {"image": "logo", "size": [723, 166]},
+            "you_win_txt": {"image": "you_win_txt", "size": [600, 85]},
+
+            "p_x1_norm": {"image": "atlas", "size": [33, 25], "pos": [496, 256], "insets": "-4.5 -6.5"},
+            "p_x2_norm": {"image": "atlas", "size": [37, 25], "pos": [459, 316], "insets": "-4.5 -4.5"},
+            "p_x3_norm": {"image": "atlas", "size": [37, 26], "pos": [454, 286], "insets": "-4   -4.5"},
+            "p_x4_norm": {"image": "atlas", "size": [37, 25], "pos": [495, 286], "insets": "-4.5 -4.5"},
+            "p_x5_norm": {"image": "atlas", "size": [38, 26], "pos": [454, 256], "insets": "-4   -4"},
+            "p_x1_high": {"image": "atlas", "size": [42, 34], "pos": [413, 328], "insets": "0 -2"},
+            "p_x2_high": {"image": "atlas", "size": [46, 34], "pos": [213, 328]},
+            "p_x3_high": {"image": "atlas", "size": [46, 34], "pos": [263, 328]},
+            "p_x4_high": {"image": "atlas", "size": [46, 34], "pos": [313, 328]},
+            "p_x5_high": {"image": "atlas", "size": [46, 34], "pos": [363, 328]},
+
+            "card.clubs.2":    {"image": "cards-0", "size": [134, 191], "pos": [4, 4]},
+            "card.diamonds.2": {"image": "cards-0", "size": [134, 191], "pos": [142, 4]},
+            "card.hearts.2":   {"image": "cards-0", "size": [134, 191], "pos": [280, 4]},
+            "card.spades.2":   {"image": "cards-0", "size": [134, 191], "pos": [418, 4]},
+            "card.clubs.3":    {"image": "cards-0", "size": [134, 191], "pos": [556, 4]},
+            "card.diamonds.3": {"image": "cards-0", "size": [134, 191], "pos": [694, 4]},
+            "card.hearts.3":   {"image": "cards-0", "size": [134, 191], "pos": [832, 4]},
+            "card.spades.3":   {"image": "cards-0", "size": [134, 191], "pos": [4, 199]},
+            "card.clubs.4":    {"image": "cards-0", "size": [134, 191], "pos": [142, 199]},
+            "card.diamonds.4": {"image": "cards-0", "size": [134, 191], "pos": [280, 199]},
+            "card.hearts.4":   {"image": "cards-0", "size": [134, 191], "pos": [418, 199]},
+            "card.spades.4":   {"image": "cards-0", "size": [134, 191], "pos": [556, 199]},
+            "card.clubs.5":    {"image": "cards-0", "size": [134, 191], "pos": [694, 199]},
+            "card.diamonds.5": {"image": "cards-0", "size": [134, 191], "pos": [832, 199]},
+            "card.hearts.5":   {"image": "cards-0", "size": [134, 191], "pos": [4, 394]},
+            "card.spades.5":   {"image": "cards-0", "size": [134, 191], "pos": [142, 394]},
+            "card.clubs.6":    {"image": "cards-0", "size": [134, 191], "pos": [280, 394]},
+            "card.diamonds.6": {"image": "cards-0", "size": [134, 191], "pos": [418, 394]},
+            "card.hearts.6":   {"image": "cards-0", "size": [134, 191], "pos": [556, 394]},
+            "card.spades.6":   {"image": "cards-0", "size": [134, 191], "pos": [694, 394]},
+            "card.clubs.7":    {"image": "cards-0", "size": [134, 191], "pos": [832, 394]},
+            "card.diamonds.7": {"image": "cards-0", "size": [134, 191], "pos": [4, 589]},
+            "card.hearts.7":   {"image": "cards-0", "size": [134, 191], "pos": [142, 589]},
+            "card.spades.7":   {"image": "cards-0", "size": [134, 191], "pos": [280, 589]},
+            "card.clubs.8":    {"image": "cards-0", "size": [134, 191], "pos": [418, 589]},
+            "card.diamonds.8": {"image": "cards-0", "size": [134, 191], "pos": [556, 589]},
+            "card.hearts.8":   {"image": "cards-0", "size": [134, 191], "pos": [694, 589]},
+            "card.spades.8":   {"image": "cards-0", "size": [134, 191], "pos": [832, 589]},
+            "card.clubs.9":    {"image": "cards-0", "size": [134, 191], "pos": [4, 784]},
+            "card.diamonds.9": {"image": "cards-0", "size": [134, 191], "pos": [142, 784]},
+            "card.hearts.9":   {"image": "cards-0", "size": [134, 191], "pos": [280, 784]},
+            "card.spades.9":   {"image": "cards-0", "size": [134, 191], "pos": [418, 784]},
+
+            "card.clubs.10":   {"image": "cards-0", "size": [134, 191], "pos": [556, 784]},
+            "card.diamonds.10":{"image": "cards-0", "size": [134, 191], "pos": [694, 784]},
+            "card.hearts.10":  {"image": "cards-0", "size": [134, 191], "pos": [832, 784]},
+            "card.spades.10":  {"image": "cards-1", "size": [134, 191], "pos": [4, 4]},
+            "card.clubs.A":    {"image": "cards-1", "size": [134, 191], "pos": [142, 4]},
+            "card.diamonds.A": {"image": "cards-1", "size": [134, 191], "pos": [280, 4]},
+            "card.hearts.A":   {"image": "cards-1", "size": [134, 191], "pos": [418, 4]},
+            "card.spades.A":   {"image": "cards-1", "size": [134, 191], "pos": [556, 4]},
+            "card.clubs.J":    {"image": "cards-1", "size": [134, 191], "pos": [4, 199]},
+            "card.diamonds.J": {"image": "cards-1", "size": [134, 191], "pos": [142, 199]},
+            "card.hearts.J":   {"image": "cards-1", "size": [134, 191], "pos": [280, 199]},
+            "card.spades.J":   {"image": "cards-1", "size": [134, 191], "pos": [418, 199]},
+            "card.clubs.K":    {"image": "cards-1", "size": [134, 191], "pos": [556, 199]},
+            "card.diamonds.K": {"image": "cards-1", "size": [134, 191], "pos": [694, 199]},
+            "card.hearts.K":   {"image": "cards-1", "size": [134, 191], "pos": [4, 394]},
+            "card.spades.K":   {"image": "cards-1", "size": [134, 191], "pos": [142, 394]},
+            "card.clubs.Q":    {"image": "cards-1", "size": [134, 191], "pos": [280, 394]},
+            "card.diamonds.Q": {"image": "cards-1", "size": [134, 191], "pos": [418, 394]},
+            "card.hearts.Q":   {"image": "cards-1", "size": [134, 191], "pos": [556, 394]},
+            "card.spades.Q":   {"image": "cards-1", "size": [134, 191], "pos": [694, 394]},
+
+            "value_field":        {"image": "buttons", "size": [201, 106], "pos": [723, 647]},
+
+            "btn.minus":          {"image": "atlas_2", "size": [179, 147], "pos": [577, 3], "insets":"0 0 0 5"},
+            "btn.minus:pressed":  {"image": "atlas_2", "size": [179, 147], "pos": [760, 3], "insets":"0 0 0 5"},
+            "btn.minus:hovered":  {"image": "atlas_2", "size": [179, 147], "pos": [760, 154], "insets":"0 0 0 5"},
+            "btn.minus:disabled": {"image": "atlas_2", "size": [179, 147], "pos": [577, 154], "insets":"0 0 0 5"},
+
+            "btn.plus":           {"image": "atlas_2", "size": [179, 147], "pos": [826, 305]},
+            "btn.plus:pressed":   {"image": "atlas_2", "size": [179, 147], "pos": [826, 607]},
+            "btn.plus:hovered":   {"image": "atlas_2", "size": [179, 147], "pos": [826, 758]},
+            "btn.plus:disabled":  {"image": "atlas_2", "size": [179, 147], "pos": [826, 456]},
+
+            "btn.bet_one_max":             {"image": "buttons", "size": [241,147], "pos": [3, 3]},
+            "btn.bet_one_max:pressed":     {"image": "buttons", "size": [241,147], "pos": [493, 3]},
+            "btn.bet_one_max:hovered":     {"image": "buttons", "size": [241,147], "pos": [738, 3]},
+            "btn.bet_one_max:disabled":    {"image": "buttons", "size": [241,147], "pos": [248, 3]},
+
+            "btn.deal":                {"image": "buttons", "size": [356, 147], "pos": [3, 496]},
+            "btn.deal:pressed":        {"image": "buttons", "size": [356, 147], "pos": [3, 647]},
+            "btn.deal:hovered":        {"image": "buttons", "size": [356, 147], "pos": [363, 647]},
+            "btn.deal:disabled":       {"image": "buttons", "size": [356, 147], "pos": [363, 496]},
+
+            "btn.collect_double":             {"image": "buttons", "size": [506, 167], "insets": "6 14.5 0 14.5", "pos": [3, 154]},
+            "btn.collect_double:pressed":     {"image": "buttons", "size": [506, 167], "insets": "6 14.5 0 14.5", "pos": [3, 325]},
+            "btn.collect_double:hovered":     {"image": "buttons", "size": [506, 167], "insets": "6 14.5 0 14.5", "pos": [513, 325]},
+            "btn.collect_double:disabled":    {"image": "buttons", "size": [506, 167], "insets": "6 14.5 0 14.5", "pos": [513, 154]},
+
+            "card.hold": {"image": "buttons", "size": [282,113], "pos": [289, 798]},
+            "card.held": {"image": "buttons", "size": [282,113], "pos": [3, 798]},
+            "card.back": {"image": "card_back", "size": [282, 402]},
+            "card.fade": {"image": "card_fade", "size": [282, 402]}
+        },
+
+        "animations" : {
+            "win_animation": {"type": "set", "mode": "serial", "repeat": -1, "content": [
+                {"type": "opacity", "duration": 0, "from": 0, "to": 1},
+                {"type": "delay", "duration": 400},
+                {"type": "opacity", "duration": 0, "from": 1, "to": 0},
+                {"type": "delay", "duration": 400}
+            ]}
+        }
+    }
+}

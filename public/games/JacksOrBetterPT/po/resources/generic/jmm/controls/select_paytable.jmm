@@ -1,0 +1,65 @@
+{
+    "ui": {
+        "multiplier_title_value": {"type": "image", "ratio": [27, 19], "props": {"anchor.fit": 17}},
+        "multiplier_title": {"type": "anchor", "group": "header_multipliers", "layout": {"relative": true, "alignment": "center"}, "cursor": "hand", "size": [69, 60], "content": [
+            {"@P": "ui/multiplier_title_value", "#ID": "disabled", "group": "header_values_disabled", "slice": "p_x1_norm", "opacity": 1},
+            {"@P": "ui/multiplier_title_value", "#ID": "enabled", "group": "header_values_enabled", "slice": "p_x1_high", "opacity": 0}
+        ]},
+        "paytable.element": {"@P": "ui/label.def", "format": "paytable.value", "text-group": "paytable-text-group"},
+        "paytable.col.1": {"@P": "ui/paytable.col.base", "content": [
+            {"@P": "ui/paytable.element", "text": "250"},
+            {"@P": "ui/paytable.element", "text": "50"},
+            {"@P": "ui/paytable.element", "text": "25"},
+            {"@P": "ui/paytable.element", "text": "9"},
+            {"@P": "ui/paytable.element", "text": "6"},
+            {"@P": "ui/paytable.element", "text": "4"},
+            {"@P": "ui/paytable.element", "text": "3"},
+            {"@P": "ui/paytable.element", "text": "2"},
+            {"@P": "ui/paytable.element", "text": "1"}
+        ]},
+        "paytable.col.2": {"@P": "ui/paytable.col.base", "content": [
+            {"@P": "ui/paytable.element", "text": "500"},
+            {"@P": "ui/paytable.element", "text": "100"},
+            {"@P": "ui/paytable.element", "text": "50"},
+            {"@P": "ui/paytable.element", "text": "18"},
+            {"@P": "ui/paytable.element", "text": "12"},
+            {"@P": "ui/paytable.element", "text": "8"},
+            {"@P": "ui/paytable.element", "text": "6"},
+            {"@P": "ui/paytable.element", "text": "4"},
+            {"@P": "ui/paytable.element", "text": "2"}
+        ]},
+        "paytable.col.3": {"@P": "ui/paytable.col.base", "content": [
+            {"@P": "ui/paytable.element", "text": "750"},
+            {"@P": "ui/paytable.element", "text": "150"},
+            {"@P": "ui/paytable.element", "text": "75"},
+            {"@P": "ui/paytable.element", "text": "27"},
+            {"@P": "ui/paytable.element", "text": "18"},
+            {"@P": "ui/paytable.element", "text": "12"},
+            {"@P": "ui/paytable.element", "text": "9"},
+            {"@P": "ui/paytable.element", "text": "6"},
+            {"@P": "ui/paytable.element", "text": "3"}
+        ]},
+        "paytable.col.4": {"@P": "ui/paytable.col.base", "content": [
+            {"@P": "ui/paytable.element", "text": "1000"},
+            {"@P": "ui/paytable.element", "text": "200"},
+            {"@P": "ui/paytable.element", "text": "100"},
+            {"@P": "ui/paytable.element", "text": "36"},
+            {"@P": "ui/paytable.element", "text": "24"},
+            {"@P": "ui/paytable.element", "text": "16"},
+            {"@P": "ui/paytable.element", "text": "12"},
+            {"@P": "ui/paytable.element", "text": "8"},
+            {"@P": "ui/paytable.element", "text": "4"}
+        ]},
+        "paytable.col.5": {"@P": "ui/paytable.col.base", "content": [
+            {"@P": "ui/paytable.element", "text": "4000", "format": "paytable.top.win"},
+            {"@P": "ui/paytable.element", "text": "250"},
+            {"@P": "ui/paytable.element", "text": "125"},
+            {"@P": "ui/paytable.element", "text": "45"},
+            {"@P": "ui/paytable.element", "text": "30"},
+            {"@P": "ui/paytable.element", "text": "20"},
+            {"@P": "ui/paytable.element", "text": "15"},
+            {"@P": "ui/paytable.element", "text": "10"},
+            {"@P": "ui/paytable.element", "text": "5"}
+        ]}
+    }
+}

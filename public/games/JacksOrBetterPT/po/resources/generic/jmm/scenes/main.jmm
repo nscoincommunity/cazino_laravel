@@ -1,0 +1,124 @@
+{
+    "resources": {
+        "widget-bundles": {
+            "btn-text-group": {"type": "text-group", "same-font-height": true},
+            "btn-double-text-group": {"type": "text-group", "same-font-height": true},
+            "paytable-text-group": {"type": "text-group", "same-font-height": true},
+            "limits-group": {"type": "text-group", "same-font-height": true},
+            "bottom-bar-group": {"type": "text-group", "same-font-height": true}
+        }
+    },
+
+    "ui": {
+        "win_combination_text": {"id": "combination_text", "type": "win-combination-text", "layout": {"type": "chbox", "alignment": "center"}, "props": {"anchor.alignment": "center", "anchor.fit": "-9 1 102 0"}, "content": [
+            {"id": "combination_name", "@P": "ui/label.def", "format": "limits.title"},
+            {"id": "combination_mult", "@P": "ui/label.def", "format": "limits.value"}
+        ]},
+        "limits": {"type": "anchor", "layout": {"relative": true}, "content": [
+            {"id": "limits_title", "@P": "ui/label.def", "format": "limits.title", "text": "limits", "alignment": "center-right", "text-group": "limits-group", "props": {"anchor.fit": "0 80 0 0"}},
+            {"id": "limits", "@P": "ui/label.def", "format": "limits.value",   "alignment": "center-left", "text-group": "limits-group", "props": {"anchor.fit": "0 53 0 21"}},
+
+            {"id": "doubleup.limits_title", "@P": "ui/label.def", "format": "limits.title", "text": "doubleup.limits", "alignment": "center-right", "text-group": "limits-group", "props": {"anchor.fit": "0 23.5 0 47"}},
+            {"id": "doubleup.limits", "@P": "ui/label.def", "format": "limits.value",   "alignment": "center-left", "text-group": "limits-group", "props": {"anchor.fit": "0 0 0 78"}}
+        ]},
+        "paytable_value": {"@P": "ui/label.def", "format": "paytable.value", "text-group": "paytable-text-group"},
+        "paytable_header": {"@P": "ui/label.def", "format": "paytable.header", "alignment": "center-left", "text-group": "paytable-text-group"},
+        "paytable_popup": {"id": "paytable", "type": "popup", "layout": {"type": "stack"}, "visible": false, "content": [
+            {"type": "image", "slice": "paytable_p", "props": {"anchor.fit": 0, "anchor.alignment": "center"}},
+            {"type": "vport", "size": [628, 343], "layout": {"base": [628, 343]}, "content": [
+                {"type": "vbox", "pos": [14, 4], "size": [204, 336], "content": [
+                    {"@P": "ui/paytable_header", "text": "royal_flush"},
+                    {"@P": "ui/paytable_header", "text": "straight_flush"},
+                    {"@P": "ui/paytable_header", "text": "4_of_a_kind"},
+                    {"@P": "ui/paytable_header", "text": "full_house"},
+                    {"@P": "ui/paytable_header", "text": "flush"},
+                    {"@P": "ui/paytable_header", "text": "straight"},
+                    {"@P": "ui/paytable_header", "text": "3_of_a_kind"},
+                    {"@P": "ui/paytable_header", "text": "two_pair"},
+                    {"@P": "ui/paytable_header", "text": "jacks_or_better"}
+                ]},
+                {"type": "vbox", "pos": [224, 4], "size": [73, 336], "content": [
+                    {"@P": "ui/paytable_value", "text": "250"},
+                    {"@P": "ui/paytable_value", "text": "50"},
+                    {"@P": "ui/paytable_value", "text": "25"},
+                    {"@P": "ui/paytable_value", "text": "9"},
+                    {"@P": "ui/paytable_value", "text": "6"},
+                    {"@P": "ui/paytable_value", "text": "4"},
+                    {"@P": "ui/paytable_value", "text": "3"},
+                    {"@P": "ui/paytable_value", "text": "2"},
+                    {"@P": "ui/paytable_value", "text": "1"}
+                ]},
+                {"type": "vbox", "pos": [306, 4], "size": [73, 336], "content": [
+                    {"@P": "ui/paytable_value", "text": "500"},
+                    {"@P": "ui/paytable_value", "text": "100"},
+                    {"@P": "ui/paytable_value", "text": "50"},
+                    {"@P": "ui/paytable_value", "text": "18"},
+                    {"@P": "ui/paytable_value", "text": "12"},
+                    {"@P": "ui/paytable_value", "text": "8"},
+                    {"@P": "ui/paytable_value", "text": "6"},
+                    {"@P": "ui/paytable_value", "text": "4"},
+                    {"@P": "ui/paytable_value", "text": "2"}
+                ]},
+                {"type": "vbox", "pos": [386, 4], "size": [73, 336], "content": [
+                    {"@P": "ui/paytable_value", "text": "750"},
+                    {"@P": "ui/paytable_value", "text": "150"},
+                    {"@P": "ui/paytable_value", "text": "75"},
+                    {"@P": "ui/paytable_value", "text": "27"},
+                    {"@P": "ui/paytable_value", "text": "18"},
+                    {"@P": "ui/paytable_value", "text": "12"},
+                    {"@P": "ui/paytable_value", "text": "9"},
+                    {"@P": "ui/paytable_value", "text": "6"},
+                    {"@P": "ui/paytable_value", "text": "3"}
+                ]},
+                {"type": "vbox", "pos": [466, 4], "size": [73, 336], "content": [
+                    {"@P": "ui/paytable_value", "text": "1000"},
+                    {"@P": "ui/paytable_value", "text": "200"},
+                    {"@P": "ui/paytable_value", "text": "100"},
+                    {"@P": "ui/paytable_value", "text": "36"},
+                    {"@P": "ui/paytable_value", "text": "24"},
+                    {"@P": "ui/paytable_value", "text": "16"},
+                    {"@P": "ui/paytable_value", "text": "12"},
+                    {"@P": "ui/paytable_value", "text": "8"},
+                    {"@P": "ui/paytable_value", "text": "4"}
+                ]},
+                {"type": "vbox", "pos": [548, 4], "size": [73, 336], "content": [
+                    {"@P": "ui/paytable_value", "text": "4000", "format": "paytable.top.win"},
+                    {"@P": "ui/paytable_value", "text": "250"},
+                    {"@P": "ui/paytable_value", "text": "125"},
+                    {"@P": "ui/paytable_value", "text": "45"},
+                    {"@P": "ui/paytable_value", "text": "30"},
+                    {"@P": "ui/paytable_value", "text": "20"},
+                    {"@P": "ui/paytable_value", "text": "15"},
+                    {"@P": "ui/paytable_value", "text": "10"},
+                    {"@P": "ui/paytable_value", "text": "5"}
+                ]}
+            ]},
+            {"id": "close_button", "type": "stack", "visible": false}
+        ]}
+    },
+    "scenes": {
+        "main-scene": {"layout": {"relative": true, "alignment": "center"}, "content": [
+            {"@P": "ui/device_wrapper", "content": [
+                {"@P": "ui/background"},
+                {"type": "image", "slice": "logo", "ratio": 4.4, "props": {"anchor.fit": "0 0 76 0"}},
+                {"@P": "ui/selectable_paytable"},
+                {"@P": "ui/controls_wrapper", "content": [
+                    {"id": "controls.wrapper", "content": [
+                        {"@P": "ui/win_combination_text"},
+                        {"@P": "ui/cards"},
+                        {"@P": "ui/you_win_txt"},
+                        {"@P": "ui/bet-controls"},
+                        {"@P": "ui/double-controls"}
+                    ]}
+                ]},
+                {"@P": "ui/bottom-panel",    "props": {"anchor.fit": "90 0 0 0"}},
+                {"@P": "ui/blocking-panel",  "props": {"anchor.fit": 0}},
+                {"@P": "ui/paytable_popup", "@O": {
+                    "landscape": {"props": {"anchor.fit": "24 25 26 25"}},
+                    "portrait":  {"props": {"anchor.fit": "24 1 26 1"}}
+                }},
+                { "id": "webView", "type": "webview", "props": {"anchor.fit": 0}, "visible" : false}
+            ]}
+        ]}
+    }
+}

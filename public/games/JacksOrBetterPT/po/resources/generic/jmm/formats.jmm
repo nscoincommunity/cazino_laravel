@@ -1,0 +1,31 @@
+{
+    "resources": {
+        "fonts": {
+            "ArialMTPro-Cond": "ArialMTPro-Cond.otf",
+            "ArialMTPro-Bold": "ArialMTPro-Bold.ttf",
+            "ArialMTPro-BoldCond": "ArialMTPro-BoldCond.otf"
+        },
+        "formats": {
+            "paytable.top.win": {"font": "ArialMTPro-BoldCond", "color": "#FFFC00", "stroke": {"color": "#FE5300", "thickness": 1}},
+            "paytable.value":   {"font": "ArialMTPro-BoldCond", "color": "#dbeefb"},
+            "paytable.header":  {"font": "ArialMTPro-BoldCond", "color": "#ffe980"},
+            "center.win.value": {"font": "ArialMTPro-Bold", "color": "#fff", "stroke": {"color": "#000", "thickness": 1}},
+
+            "limits.title": {"font": "ArialMTPro-Bold", "color": "#ffe980"},
+            "limits.value": {"font": "ArialMTPro-Bold", "color": "#fff"},
+
+            "bet.value": {"font": "Arial", "color": "#fff", "size": 55},
+            "bet.title": {"font": "Arial", "color": "#ebb125", "size": 55},
+
+            "txt.hold": {"font": "ArialMTPro-Cond", "color": "#E1A555", "shadow": {"offset": [2,2], "color": "#354E73"}, "size": 40},
+            "txt.held": {"font": "ArialMTPro-Cond", "color": "#F7DA7F", "shadow": {"offset": [2,2], "color": "#8B3200"}, "size": 40},
+            "txt.hold:disabled": {"font": "Arial", "style": "bold", "color": "#825e2e", "shadow": {"offset": [2,2], "color": "#354E73"}, "size": 40},
+
+            "btn.format":               {"font": "ArialMTPro-Bold", "color": "#000", "stroke": {"color": "#fff", "thickness": 1}},
+            "btn.format:disabled":      {"font": "ArialMTPro-Bold", "color": "#1c1c1c", "stroke": {"color": "#606060", "thickness": 1}},
+            "btn.format.deal":          {"font": "ArialMTPro-Bold", "color": "#FFFC00", "stroke": {"color": "#000", "thickness": 1}},
+            "btn.format.deal:disabled": {"font": "ArialMTPro-Bold", "color": "#afad00", "stroke": {"color": "#000", "thickness": 1}}
+        }
+
+    }
+}

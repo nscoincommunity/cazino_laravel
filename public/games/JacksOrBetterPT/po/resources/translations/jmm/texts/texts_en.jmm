@@ -1,0 +1,40 @@
+{
+    "resources": {
+        "texts": {
+            "can_double": "YOU CAN DOUBLE TO $ {0}\n OR DOUBLE HALF TO $ {1}",
+            "coin_value": "COIN VALUE",
+            "total_bet": "TOTAL BET",
+            "select_the_cards": "SELECT ANY CARDS YOU\nWANT TO HOLD AND THEN SELECT DRAW",
+            "select_the_card": "SELECT A HIGHER CARD TO WIN",
+            "select_double": "SELECT DOUBLE, DOUBLE HALF OR COLLECT",
+            "enter_your_bet": "ENTER YOUR BET AND SELECT DEAL",
+            "win_title": "WIN",
+            "double_up_limit_exceeded_msg" : "The double up limit has been reached.",
+
+            "royal_flush":     "ROYAL FLUSH",
+            "straight_flush":  "STRAIGHT FLUSH",
+            "4_of_a_kind":     "FOUR OF A KIND",
+            "full_house":      "FULL HOUSE",
+            "flush":           "FLUSH",
+            "straight":        "STRAIGHT",
+            "3_of_a_kind":     "THREE OF A KIND",
+            "two_pair":        "TWO PAIR",
+            "jacks_or_better": "JACKS OR BETTER",
+
+            "line_bet": "BET",
+            "hold": "HOLD",
+            "held": "HELD",
+            "btn.deal": "DEAL",
+            "btn.draw": "DRAW",
+            "btn.bet_one": "BET\nONE",
+            "btn.bet_max": "BET\nMAX",
+            "btn.double": "DOUBLE TO\n{0}",
+            "btn.double_half": "DOUBLE HALF TO\n{0}",
+            "btn.collect": "COLLECT\n{0}",
+
+            "limits": "LIMITS:",
+            "doubleup.limits": "DOUBLE UP:"
+        }
+    }
+
+}

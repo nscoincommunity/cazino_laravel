@@ -1,0 +1,38 @@
+{
+    "modules": {
+        "default": {
+            "window":{
+                "pos": "center",
+                "size": [1152, 679]
+            },
+            "jmms": [
+                "controls/controls.jmm",
+                "controls/select_paytable.jmm",
+                "config/config.jmm",
+                "formats.jmm",
+                "images/images.jmm",
+                "media.jmm",
+                "scenes/debug.jmm",
+                "scenes/main.jmm"
+            ],
+
+            "localizedBrandedJmms": [
+                "../../translations/jmm/table/common/texts/texts_en.jmm",
+                "../../translations/jmm/texts/texts_en.jmm",
+                "../../translations/jmm/formats/formats_en.jmm"
+            ],
+            "phone": [
+                "ui/ui-phone.jmm",
+                "controls/controls_phone.jmm"
+            ],
+            "tablet": [
+                "ui/ui-tablet.jmm",
+                "controls/controls_tablet.jmm"
+            ],
+            "unknown": [
+                "ui/ui-tablet.jmm",
+                "controls/controls_tablet.jmm"
+            ]
+        }
+    }
+}
