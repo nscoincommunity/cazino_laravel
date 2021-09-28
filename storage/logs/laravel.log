@@ -7279,3 +7279,555 @@ Stack trace:
 #99 F:\\Works\oyalcazino\\cazino_laravel\\server.php(21): require_once('F:\\\\Works\\\oyalc...')
 #100 {main}
 "} 
+[2021-09-28 04:01:20] dev.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:68)
+[stacktrace]
+#0 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(68): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(44): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(183): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(915): call_user_func(Object(Closure))
+#6 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(940): Illuminate\\Database\\Connection->getPdo()
+#7 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(399): Illuminate\\Database\\Connection->getReadPdo()
+#8 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(325): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(657): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#10 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#11 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#12 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(1909): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#13 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(1894): Illuminate\\Database\\Query\\Builder->runSelect()
+#14 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\anlutro\\l4-settings\\src\\DatabaseSettingStore.php(189): Illuminate\\Database\\Query\\Builder->get()
+#15 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\anlutro\\l4-settings\\src\\SettingStore.php(144): anlutro\\LaravelSettings\\DatabaseSettingStore->read()
+#16 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\anlutro\\l4-settings\\src\\SettingStore.php(45): anlutro\\LaravelSettings\\SettingStore->checkLoaded()
+#17 F:\\Works\oyalcazino\\cazino_laravel\\app\\Support\\helpers.php(19): anlutro\\LaravelSettings\\SettingStore->get('app_name', NULL)
+#18 F:\\Works\oyalcazino\\cazino_laravel\\app\\Providers\\AppServiceProvider.php(30): settings('app_name')
+#19 [internal function]: VanguardDK\\Providers\\AppServiceProvider->boot()
+#20 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#21 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(794): Illuminate\\Container\\Container->call(Array)
+#25 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(777): Illuminate\\Foundation\\Application->bootProvider(Object(VanguardDK\\Providers\\AppServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(VanguardDK\\Providers\\AppServiceProvider), 25)
+#27 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(778): array_walk(Array, Object(Closure))
+#28 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(206): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 F:\\Works\oyalcazino\\cazino_laravel\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2021-09-28 04:01:20] dev.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from `w_settings`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from `w_settings`) at F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:68)
+[stacktrace]
+#0 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(1909): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(1894): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\anlutro\\l4-settings\\src\\DatabaseSettingStore.php(189): Illuminate\\Database\\Query\\Builder->get()
+#5 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\anlutro\\l4-settings\\src\\SettingStore.php(144): anlutro\\LaravelSettings\\DatabaseSettingStore->read()
+#6 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\anlutro\\l4-settings\\src\\SettingStore.php(45): anlutro\\LaravelSettings\\SettingStore->checkLoaded()
+#7 F:\\Works\oyalcazino\\cazino_laravel\\app\\Support\\helpers.php(19): anlutro\\LaravelSettings\\SettingStore->get('app_name', NULL)
+#8 F:\\Works\oyalcazino\\cazino_laravel\\app\\Providers\\AppServiceProvider.php(30): settings('app_name')
+#9 [internal function]: VanguardDK\\Providers\\AppServiceProvider->boot()
+#10 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#11 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#12 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(794): Illuminate\\Container\\Container->call(Array)
+#15 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(777): Illuminate\\Foundation\\Application->bootProvider(Object(VanguardDK\\Providers\\AppServiceProvider))
+#16 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(VanguardDK\\Providers\\AppServiceProvider), 25)
+#17 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(778): array_walk(Array, Object(Closure))
+#18 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#19 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(206): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#20 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#21 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#22 F:\\Works\oyalcazino\\cazino_laravel\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+"} 
+[2021-09-28 04:04:25] dev.ERROR: Trying to access array offset on value of type null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on value of type null at F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php:147)
+[stacktrace]
+#0 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php(147): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to acces...', 'F:\\\\Works\\\oyalc...', 147, Array)
+#1 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php(127): Egulias\\EmailValidator\\Parser\\Parser->escaped()
+#2 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\LocalPart.php(57): Egulias\\EmailValidator\\Parser\\Parser->isFWS()
+#3 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\EmailParser.php(48): Egulias\\EmailValidator\\Parser\\LocalPart->parse('6a1f464268caa04...')
+#4 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Validation\\RFCValidation.php(30): Egulias\\EmailValidator\\EmailParser->parse('6a1f464268caa04...')
+#5 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\EmailValidator.php(37): Egulias\\EmailValidator\\Validation\\RFCValidation->isValid('6a1f464268caa04...', Object(Egulias\\EmailValidator\\EmailLexer))
+#6 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(180): Egulias\\EmailValidator\\EmailValidator->isValid('6a1f464268caa04...', Object(Egulias\\EmailValidator\\Validation\\RFCValidation))
+#7 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(126): Swift_Mime_Headers_IdentificationHeader->assertValidId('6a1f464268caa04...')
+#8 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(97): Swift_Mime_Headers_IdentificationHeader->setIds(Array)
+#9 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(73): Swift_Mime_Headers_IdentificationHeader->setId('6a1f464268caa04...')
+#10 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleHeaderFactory.php(143): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('6a1f464268caa04...')
+#11 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleHeaderSet.php(120): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', '6a1f464268caa04...')
+#12 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleMimeEntity.php(212): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', '6a1f464268caa04...')
+#13 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleMessage.php(57): Swift_Mime_SimpleMimeEntity->setId('6a1f464268caa04...')
+#14 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+#15 [internal function]: Swift_Message->__construct()
+#16 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\DependencyContainer.php(312): ReflectionClass->newInstanceArgs(Array)
+#17 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\DependencyContainer.php(112): Swift_DependencyContainer->createNewInstance('message.message')
+#18 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(43): Swift_DependencyContainer->lookup('message.message')
+#19 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(436): Swift_Mailer->createMessage('message')
+#20 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(226): Illuminate\\Mail\\Mailer->createMessage()
+#21 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\Channels\\MailChannel.php(64): Illuminate\\Mail\\Mailer->send(Object(Illuminate\\Support\\HtmlString), Array, Object(Closure))
+#22 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(113): Illuminate\\Notifications\\Channels\\MailChannel->send(Object(VanguardDK\\User), Object(VanguardDK\\Notifications\\UserRegistered))
+#23 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(89): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(VanguardDK\\User), '2b8ffaa2-f715-4...', Object(VanguardDK\\Notifications\\UserRegistered), 'mail')
+#24 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(64): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(VanguardDK\\Notifications\\UserRegistered))
+#25 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\ChannelManager.php(35): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(VanguardDK\\Notifications\\UserRegistered))
+#26 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(VanguardDK\\User), Object(VanguardDK\\Notifications\\UserRegistered))
+#27 F:\\Works\oyalcazino\\cazino_laravel\\app\\Listeners\\Registration\\SendSignUpNotification.php(34): VanguardDK\\User->notify(Object(VanguardDK\\Notifications\\UserRegistered))
+#28 [internal function]: VanguardDK\\Listeners\\Registration\\SendSignUpNotification->handle(Object(VanguardDK\\Events\\User\\Registered))
+#29 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(379): call_user_func_array(Array, Array)
+#30 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(209): Illuminate\\Events\\Dispatcher->Illuminate\\Events\\{closure}('VanguardDK\\\\Even...', Array)
+#31 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(474): Illuminate\\Events\\Dispatcher->dispatch('VanguardDK\\\\Even...')
+#32 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController.php(0): event(Object(VanguardDK\\Events\\User\\Registered))
+#33 [internal function]: VanguardDK\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController->postRegister(Object(VanguardDK\\Http\\Requests\\Auth\\RegisterRequest))
+#34 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#35 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('postRegister', Array)
+#36 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(VanguardDK\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController), 'postRegister')
+#37 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#38 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Route->run()
+#39 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\Registration.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\Registration->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\SetLanguage.php(26): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\SetLanguage->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#62 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#65 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#68 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(661): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#70 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(602): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#71 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(591): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#72 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#73 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#74 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\proengsoft\\laravel-jsvalidation\\src\\RemoteValidationMiddleware.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Proengsoft\\JsValidation\\RemoteValidationMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(65): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#79 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#80 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#81 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#82 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#83 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#84 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#85 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#86 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#87 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#88 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#89 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(51): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#90 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#91 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#92 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\VerifyInstallation.php(29): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#93 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\VerifyInstallation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#94 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#95 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#96 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#97 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#98 F:\\Works\oyalcazino\\cazino_laravel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#99 F:\\Works\oyalcazino\\cazino_laravel\\server.php(21): require_once('F:\\\\Works\\\oyalc...')
+#100 {main}
+"} 
+[2021-09-28 04:06:25] dev.ERROR: Trying to access array offset on value of type null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on value of type null at F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php:147)
+[stacktrace]
+#0 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php(147): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to acces...', 'F:\\\\Works\\\oyalc...', 147, Array)
+#1 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php(127): Egulias\\EmailValidator\\Parser\\Parser->escaped()
+#2 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\LocalPart.php(57): Egulias\\EmailValidator\\Parser\\Parser->isFWS()
+#3 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\EmailParser.php(48): Egulias\\EmailValidator\\Parser\\LocalPart->parse('914aa37bf8ca10e...')
+#4 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Validation\\RFCValidation.php(30): Egulias\\EmailValidator\\EmailParser->parse('914aa37bf8ca10e...')
+#5 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\EmailValidator.php(37): Egulias\\EmailValidator\\Validation\\RFCValidation->isValid('914aa37bf8ca10e...', Object(Egulias\\EmailValidator\\EmailLexer))
+#6 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(180): Egulias\\EmailValidator\\EmailValidator->isValid('914aa37bf8ca10e...', Object(Egulias\\EmailValidator\\Validation\\RFCValidation))
+#7 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(126): Swift_Mime_Headers_IdentificationHeader->assertValidId('914aa37bf8ca10e...')
+#8 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(97): Swift_Mime_Headers_IdentificationHeader->setIds(Array)
+#9 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(73): Swift_Mime_Headers_IdentificationHeader->setId('914aa37bf8ca10e...')
+#10 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleHeaderFactory.php(143): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('914aa37bf8ca10e...')
+#11 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleHeaderSet.php(120): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', '914aa37bf8ca10e...')
+#12 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleMimeEntity.php(212): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', '914aa37bf8ca10e...')
+#13 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleMessage.php(57): Swift_Mime_SimpleMimeEntity->setId('914aa37bf8ca10e...')
+#14 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+#15 [internal function]: Swift_Message->__construct()
+#16 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\DependencyContainer.php(312): ReflectionClass->newInstanceArgs(Array)
+#17 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\DependencyContainer.php(112): Swift_DependencyContainer->createNewInstance('message.message')
+#18 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(43): Swift_DependencyContainer->lookup('message.message')
+#19 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(436): Swift_Mailer->createMessage('message')
+#20 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(226): Illuminate\\Mail\\Mailer->createMessage()
+#21 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\Channels\\MailChannel.php(64): Illuminate\\Mail\\Mailer->send(Object(Illuminate\\Support\\HtmlString), Array, Object(Closure))
+#22 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(113): Illuminate\\Notifications\\Channels\\MailChannel->send(Object(VanguardDK\\User), Object(VanguardDK\\Notifications\\UserRegistered))
+#23 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(89): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(VanguardDK\\User), 'ed17ae6f-a273-4...', Object(VanguardDK\\Notifications\\UserRegistered), 'mail')
+#24 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(64): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(VanguardDK\\Notifications\\UserRegistered))
+#25 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\ChannelManager.php(35): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(VanguardDK\\Notifications\\UserRegistered))
+#26 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(VanguardDK\\User), Object(VanguardDK\\Notifications\\UserRegistered))
+#27 F:\\Works\oyalcazino\\cazino_laravel\\app\\Listeners\\Registration\\SendSignUpNotification.php(34): VanguardDK\\User->notify(Object(VanguardDK\\Notifications\\UserRegistered))
+#28 [internal function]: VanguardDK\\Listeners\\Registration\\SendSignUpNotification->handle(Object(VanguardDK\\Events\\User\\Registered))
+#29 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(379): call_user_func_array(Array, Array)
+#30 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(209): Illuminate\\Events\\Dispatcher->Illuminate\\Events\\{closure}('VanguardDK\\\\Even...', Array)
+#31 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(474): Illuminate\\Events\\Dispatcher->dispatch('VanguardDK\\\\Even...')
+#32 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController.php(0): event(Object(VanguardDK\\Events\\User\\Registered))
+#33 [internal function]: VanguardDK\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController->postRegister(Object(VanguardDK\\Http\\Requests\\Auth\\RegisterRequest))
+#34 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#35 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('postRegister', Array)
+#36 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(VanguardDK\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController), 'postRegister')
+#37 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#38 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Route->run()
+#39 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\Registration.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\Registration->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\SetLanguage.php(26): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\SetLanguage->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#62 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#65 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#68 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(661): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#70 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(602): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#71 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(591): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#72 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#73 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#74 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\proengsoft\\laravel-jsvalidation\\src\\RemoteValidationMiddleware.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Proengsoft\\JsValidation\\RemoteValidationMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(65): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#79 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#80 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#81 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#82 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#83 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#84 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#85 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#86 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#87 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#88 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#89 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(51): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#90 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#91 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#92 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\VerifyInstallation.php(29): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#93 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\VerifyInstallation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#94 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#95 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#96 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#97 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#98 F:\\Works\oyalcazino\\cazino_laravel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#99 F:\\Works\oyalcazino\\cazino_laravel\\server.php(21): require_once('F:\\\\Works\\\oyalc...')
+#100 {main}
+"} 
+[2021-09-28 04:08:45] dev.ERROR: Trying to access array offset on value of type null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on value of type null at F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php:147)
+[stacktrace]
+#0 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php(147): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to acces...', 'F:\\\\Works\\\oyalc...', 147, Array)
+#1 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php(127): Egulias\\EmailValidator\\Parser\\Parser->escaped()
+#2 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\LocalPart.php(57): Egulias\\EmailValidator\\Parser\\Parser->isFWS()
+#3 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\EmailParser.php(48): Egulias\\EmailValidator\\Parser\\LocalPart->parse('9e5fc05a21f33ec...')
+#4 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Validation\\RFCValidation.php(30): Egulias\\EmailValidator\\EmailParser->parse('9e5fc05a21f33ec...')
+#5 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\EmailValidator.php(37): Egulias\\EmailValidator\\Validation\\RFCValidation->isValid('9e5fc05a21f33ec...', Object(Egulias\\EmailValidator\\EmailLexer))
+#6 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(180): Egulias\\EmailValidator\\EmailValidator->isValid('9e5fc05a21f33ec...', Object(Egulias\\EmailValidator\\Validation\\RFCValidation))
+#7 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(126): Swift_Mime_Headers_IdentificationHeader->assertValidId('9e5fc05a21f33ec...')
+#8 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(97): Swift_Mime_Headers_IdentificationHeader->setIds(Array)
+#9 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(73): Swift_Mime_Headers_IdentificationHeader->setId('9e5fc05a21f33ec...')
+#10 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleHeaderFactory.php(143): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('9e5fc05a21f33ec...')
+#11 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleHeaderSet.php(120): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', '9e5fc05a21f33ec...')
+#12 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleMimeEntity.php(212): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', '9e5fc05a21f33ec...')
+#13 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleMessage.php(57): Swift_Mime_SimpleMimeEntity->setId('9e5fc05a21f33ec...')
+#14 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+#15 [internal function]: Swift_Message->__construct()
+#16 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\DependencyContainer.php(312): ReflectionClass->newInstanceArgs(Array)
+#17 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\DependencyContainer.php(112): Swift_DependencyContainer->createNewInstance('message.message')
+#18 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(43): Swift_DependencyContainer->lookup('message.message')
+#19 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(436): Swift_Mailer->createMessage('message')
+#20 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(226): Illuminate\\Mail\\Mailer->createMessage()
+#21 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\Channels\\MailChannel.php(64): Illuminate\\Mail\\Mailer->send(Object(Illuminate\\Support\\HtmlString), Array, Object(Closure))
+#22 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(113): Illuminate\\Notifications\\Channels\\MailChannel->send(Object(VanguardDK\\User), Object(VanguardDK\\Notifications\\UserRegistered))
+#23 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(89): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(VanguardDK\\User), '114298d6-0f3d-4...', Object(VanguardDK\\Notifications\\UserRegistered), 'mail')
+#24 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(64): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(VanguardDK\\Notifications\\UserRegistered))
+#25 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\ChannelManager.php(35): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(VanguardDK\\Notifications\\UserRegistered))
+#26 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(VanguardDK\\User), Object(VanguardDK\\Notifications\\UserRegistered))
+#27 F:\\Works\oyalcazino\\cazino_laravel\\app\\Listeners\\Registration\\SendSignUpNotification.php(34): VanguardDK\\User->notify(Object(VanguardDK\\Notifications\\UserRegistered))
+#28 [internal function]: VanguardDK\\Listeners\\Registration\\SendSignUpNotification->handle(Object(VanguardDK\\Events\\User\\Registered))
+#29 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(379): call_user_func_array(Array, Array)
+#30 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(209): Illuminate\\Events\\Dispatcher->Illuminate\\Events\\{closure}('VanguardDK\\\\Even...', Array)
+#31 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(474): Illuminate\\Events\\Dispatcher->dispatch('VanguardDK\\\\Even...')
+#32 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController.php(0): event(Object(VanguardDK\\Events\\User\\Registered))
+#33 [internal function]: VanguardDK\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController->postRegister(Object(VanguardDK\\Http\\Requests\\Auth\\RegisterRequest))
+#34 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#35 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('postRegister', Array)
+#36 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(VanguardDK\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController), 'postRegister')
+#37 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#38 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Route->run()
+#39 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\Registration.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\Registration->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\SetLanguage.php(26): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\SetLanguage->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#62 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#65 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#68 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(661): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#70 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(602): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#71 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(591): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#72 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#73 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#74 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\proengsoft\\laravel-jsvalidation\\src\\RemoteValidationMiddleware.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Proengsoft\\JsValidation\\RemoteValidationMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(65): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#79 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#80 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#81 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#82 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#83 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#84 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#85 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#86 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#87 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#88 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#89 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(51): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#90 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#91 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#92 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\VerifyInstallation.php(29): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#93 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\VerifyInstallation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#94 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#95 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#96 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#97 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#98 F:\\Works\oyalcazino\\cazino_laravel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#99 F:\\Works\oyalcazino\\cazino_laravel\\server.php(21): require_once('F:\\\\Works\\\oyalc...')
+#100 {main}
+"} 
+[2021-09-28 04:09:28] dev.ERROR: Trying to access array offset on value of type null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on value of type null at F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php:147)
+[stacktrace]
+#0 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php(147): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to acces...', 'F:\\\\Works\\\oyalc...', 147, Array)
+#1 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\Parser.php(127): Egulias\\EmailValidator\\Parser\\Parser->escaped()
+#2 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Parser\\LocalPart.php(57): Egulias\\EmailValidator\\Parser\\Parser->isFWS()
+#3 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\EmailParser.php(48): Egulias\\EmailValidator\\Parser\\LocalPart->parse('203407b08a4946a...')
+#4 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\Validation\\RFCValidation.php(30): Egulias\\EmailValidator\\EmailParser->parse('203407b08a4946a...')
+#5 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\egulias\\email-validator\\EmailValidator\\EmailValidator.php(37): Egulias\\EmailValidator\\Validation\\RFCValidation->isValid('203407b08a4946a...', Object(Egulias\\EmailValidator\\EmailLexer))
+#6 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(180): Egulias\\EmailValidator\\EmailValidator->isValid('203407b08a4946a...', Object(Egulias\\EmailValidator\\Validation\\RFCValidation))
+#7 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(126): Swift_Mime_Headers_IdentificationHeader->assertValidId('203407b08a4946a...')
+#8 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(97): Swift_Mime_Headers_IdentificationHeader->setIds(Array)
+#9 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\Headers\\IdentificationHeader.php(73): Swift_Mime_Headers_IdentificationHeader->setId('203407b08a4946a...')
+#10 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleHeaderFactory.php(143): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('203407b08a4946a...')
+#11 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleHeaderSet.php(120): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', '203407b08a4946a...')
+#12 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleMimeEntity.php(212): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', '203407b08a4946a...')
+#13 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mime\\SimpleMessage.php(57): Swift_Mime_SimpleMimeEntity->setId('203407b08a4946a...')
+#14 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+#15 [internal function]: Swift_Message->__construct()
+#16 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\DependencyContainer.php(312): ReflectionClass->newInstanceArgs(Array)
+#17 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\DependencyContainer.php(112): Swift_DependencyContainer->createNewInstance('message.message')
+#18 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(43): Swift_DependencyContainer->lookup('message.message')
+#19 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(436): Swift_Mailer->createMessage('message')
+#20 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(226): Illuminate\\Mail\\Mailer->createMessage()
+#21 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\Channels\\MailChannel.php(64): Illuminate\\Mail\\Mailer->send(Object(Illuminate\\Support\\HtmlString), Array, Object(Closure))
+#22 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(113): Illuminate\\Notifications\\Channels\\MailChannel->send(Object(VanguardDK\\User), Object(VanguardDK\\Notifications\\UserRegistered))
+#23 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(89): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(VanguardDK\\User), '4be58ef7-846f-4...', Object(VanguardDK\\Notifications\\UserRegistered), 'mail')
+#24 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(64): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(VanguardDK\\Notifications\\UserRegistered))
+#25 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\ChannelManager.php(35): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(VanguardDK\\Notifications\\UserRegistered))
+#26 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(VanguardDK\\User), Object(VanguardDK\\Notifications\\UserRegistered))
+#27 F:\\Works\oyalcazino\\cazino_laravel\\app\\Listeners\\Registration\\SendSignUpNotification.php(34): VanguardDK\\User->notify(Object(VanguardDK\\Notifications\\UserRegistered))
+#28 [internal function]: VanguardDK\\Listeners\\Registration\\SendSignUpNotification->handle(Object(VanguardDK\\Events\\User\\Registered))
+#29 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(379): call_user_func_array(Array, Array)
+#30 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(209): Illuminate\\Events\\Dispatcher->Illuminate\\Events\\{closure}('VanguardDK\\\\Even...', Array)
+#31 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(474): Illuminate\\Events\\Dispatcher->dispatch('VanguardDK\\\\Even...')
+#32 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController.php(0): event(Object(VanguardDK\\Events\\User\\Registered))
+#33 [internal function]: VanguardDK\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController->postRegister(Object(VanguardDK\\Http\\Requests\\Auth\\RegisterRequest))
+#34 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#35 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('postRegister', Array)
+#36 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(VanguardDK\\Http\\Controllers\\Web\\Frontend\\Auth\\AuthController), 'postRegister')
+#37 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#38 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Route->run()
+#39 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\Registration.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\Registration->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\SetLanguage.php(26): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\SetLanguage->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#62 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#65 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#68 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(661): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#70 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(602): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#71 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(591): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#72 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#73 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#74 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\proengsoft\\laravel-jsvalidation\\src\\RemoteValidationMiddleware.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Proengsoft\\JsValidation\\RemoteValidationMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(65): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#79 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#80 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#81 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#82 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#83 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#84 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#85 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#86 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#87 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#88 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#89 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(51): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#90 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#91 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#92 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\VerifyInstallation.php(29): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#93 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\VerifyInstallation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#94 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#95 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#96 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#97 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#98 F:\\Works\oyalcazino\\cazino_laravel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#99 F:\\Works\oyalcazino\\cazino_laravel\\server.php(21): require_once('F:\\\\Works\\\oyalc...')
+#100 {main}
+"} 
+[2021-09-28 04:22:27] dev.ERROR: scandir(F:\Works\royalcazino\cazino_laravel\public/games/AgeOfPrivateersGT/source/SOUND): The system cannot find the path specified. (code: 3) {"userId":89,"email":"test000@gmail.com","exception":"[object] (ErrorException(code: 0): scandir(F:\\Works\oyalcazino\\cazino_laravel\\public/games/AgeOfPrivateersGT/source/SOUND): The system cannot find the path specified. (code: 3) at F:\\Works\oyalcazino\\cazino_laravel\\app\\Games\\AgeOfPrivateersGT\\SlotSettings.php:0)
+[stacktrace]
+#0 F:\\Works\oyalcazino\\cazino_laravel\\app\\Games\\AgeOfPrivateersGT\\SlotSettings.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'scandir(F:\\\\Work...', 'F:\\\\Works\\\oyalc...', 0, Array)
+#1 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Controllers\\Web\\Frontend\\GamesController.php(152): VanguardDK\\Games\\AgeOfPrivateersGT\\SlotSettings->__construct('AgeOfPrivateers...', 89)
+#2 [internal function]: VanguardDK\\Http\\Controllers\\Web\\Frontend\\GamesController->go(Object(Illuminate\\Http\\Request), 'AgeOfPrivateers...')
+#3 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#4 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('go', Array)
+#5 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(VanguardDK\\Http\\Controllers\\Web\\Frontend\\GamesController), 'go')
+#6 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#7 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Route->run()
+#8 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\SetLanguage.php(26): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\SetLanguage->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(661): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#33 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(602): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#34 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(591): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#35 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#36 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#37 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\proengsoft\\laravel-jsvalidation\\src\\RemoteValidationMiddleware.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Proengsoft\\JsValidation\\RemoteValidationMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(65): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(51): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 F:\\Works\oyalcazino\\cazino_laravel\\app\\Http\\Middleware\\VerifyInstallation.php(29): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): VanguardDK\\Http\\Middleware\\VerifyInstallation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#60 F:\\Works\oyalcazino\\cazino_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#61 F:\\Works\oyalcazino\\cazino_laravel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#62 F:\\Works\oyalcazino\\cazino_laravel\\server.php(21): require_once('F:\\\\Works\\\oyalc...')
+#63 {main}
+"} 
