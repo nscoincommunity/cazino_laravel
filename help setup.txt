@@ -1,0 +1,32 @@
+The script works on Ubuntu 18.04 and Debian 9
+
+Since the script is in laravel, the root directory is public, .htaccess is responsible for redirecting to a subdirectory
+
+To install, unzip the archive, create a database in mysql5.7 or higher and import the database from ADDONS / MySQL /
+
+Next, in the .env files, you need to register access to the database and site URL, as well as access to the database in config / database.php
+
+The script only works on php7.2, idap, mbstring, gd, ioncube extensions, just for games that need to install nodejs version 12
+
+Installing js node using the sample installation under Ubuntu 18.04
+
+https://www.rosehosting.com/blog/how-to-install-node-js-on-ubuntu-18-04/
+apt-get install curl
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+apt-get install nodejs
+
+Next, you need to run server.js, which is located in the PTWebSocket folder
+We do the following
+
+pm2 ls
+npm install -g ws
+npm install -g request
+npm install pm2 -g
+pm2 start server.js --watch
+check if it works
+status pm2
+
+then you need to open port 8449 and in public / socket_config.json register your domain in domain.com format without www and http
+
+
+Some games require Node JS connection

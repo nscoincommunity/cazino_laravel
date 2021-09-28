@@ -1,0 +1,14 @@
+{
+"port":8449,
+"host":"zaigrayka.com",
+"prefix":"https://",
+
+"host_ws":"zaigrayka.com",
+"prefix_ws":"wss://",
+
+"ssl":true
+
+
+
+
+}

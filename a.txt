@@ -1,0 +1,40 @@
+ Volume in drive F is New Volume
+ Volume Serial Number is E4F7-209E
+
+ Directory of F:\Works\royalcazino\cazino_laravel
+
+09/18/2021  12:23 AM    <DIR>          .
+09/18/2021  12:23 AM    <DIR>          ..
+02/03/2020  08:39 PM               324 .DK
+04/27/2020  07:32 AM             6,147 .DS_Store
+01/31/2021  02:13 PM               704 .env
+04/15/2020  07:38 PM               324 .KEY
+08/07/2019  12:59 AM                 0 .licenseDK
+09/18/2021  12:23 AM                 0 a.txt
+09/17/2021  05:43 AM    <DIR>          app
+01/29/2018  07:00 AM             1,686 artisan
+05/06/2020  06:01 PM    <DIR>          bootstrap
+09/17/2021  02:51 AM        15,132,674 cazino.sql
+07/30/2019  12:36 PM             2,460 composer.json
+07/30/2019  12:21 PM           220,771 composer.lock
+05/21/2018  06:00 AM         1,854,600 composer.phar
+02/04/2021  12:28 PM    <DIR>          config
+05/06/2020  06:01 PM    <DIR>          extra
+09/17/2021  02:51 AM             1,231 help setup.txt
+09/17/2021  03:09 AM             3,656 Open Notebook.onetoc2
+05/16/2018  06:00 AM           483,631 package-lock.json
+05/16/2018  06:00 AM               952 package.json
+01/29/2018  07:00 AM             1,159 phpunit.xml
+01/31/2021  10:05 PM    <DIR>          PTWebSocket
+02/01/2021  08:48 AM    <DIR>          public
+01/29/2018  07:00 AM                53 readme.md
+05/06/2020  06:01 PM    <DIR>          resources
+05/06/2020  06:01 PM    <DIR>          routes
+01/29/2018  07:00 AM               567 server.php
+01/22/2020  10:45 PM    <DIR>          storage
+05/06/2020  06:01 PM    <DIR>          tests
+05/06/2020  06:01 PM    <DIR>          vendor
+05/16/2018  06:00 AM             1,304 webpack.mix.js
+03/27/2018  06:00 AM           679,958 _ide_helper.php
+              20 File(s)     18,392,201 bytes
+              13 Dir(s)  30,256,824,320 bytes free
