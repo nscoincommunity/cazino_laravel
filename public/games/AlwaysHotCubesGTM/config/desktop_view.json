@@ -1,0 +1,297 @@
+{
+
+
+"messagesGame":{
+"messagesJackWnd":{"type":"bitmap","res":["JACK_WND"],"x":0,"y":0},
+"messagesJackWin":{"type":"text","res":[""],"x":1024,"y":585,"fontText":"50px Verdana Bold","colorText":"#FFFF66","defaultText":"5000","alignText":"center" }
+
+},
+
+"viewGame":{
+
+"spriteSheet":{"config":"/games/AlwaysHotCubesGTM/source/RES/GAME.json","file":"/games/AlwaysHotCubesGTM/source/RES/GAME.png"},
+"game":{"type":"bitmap","res":["game"],"x":0,"y":0},
+"logo":{"type":"bitmap","res":["logo"],"x":630,"y":0}
+
+},
+
+	
+"bonusGame":{
+"bonusWnd":{"type":"bitmap","res":["message"],"x":568,"y":308},
+
+"bonusWin":{"type":"text","res":[""],"x":1024,"y":71,"fontText":"25px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center" },
+"bonusWndText":{"type":"text","res":[""],"x":1024,"y":415,"fontText":"45px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center" },
+"bonusWndTextEnd":{"type":"text","res":[""],"x":1024,"y":400,"fontText":"45px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center" }
+	
+},
+
+
+
+"gambleGame":{
+
+"spriteSheet":{"config":"/games/AlwaysHotCubesGTM/source/RES/GAMBLE.json","file":"/games/AlwaysHotCubesGTM/source/RES/GAMBLE.png"},
+
+"gambleBack":{"type":"bitmap","res":["background"],"x":407,"y":120},
+
+"gambleCardsBack1":{"type":"bitmap","res":["cardE0"],"x":924,"y":440},
+"gambleCardsBack2":{"type":"bitmap","res":["cardE1"],"x":924,"y":440},
+
+"gambleSelectRed":{"type":"button","res":["redGambleEnabled","redGambleOver","redGambleDown","redGambleDisabled"],"x":524,"y":490},
+"gambleSelectBlack":{"type":"button","res":["blackGambleEnabled","blackGambleOver","blackGambleDown","blackGambleDisabled"],"x":1220,"y":490},
+
+"gambleCardsC":{"type":"bitmap","res":["cardCA"],"x":924,"y":440},
+"gambleCardsD":{"type":"bitmap","res":["cardDA"],"x":924,"y":440},
+"gambleCardsH":{"type":"bitmap","res":["cardHA"],"x":924,"y":440},
+"gambleCardsS":{"type":"bitmap","res":["cardSA"],"x":924,"y":440},
+
+"gambleCardsMBack":{"type":"bitmap","res":["historyE0"],"x":920,"y":293},
+"gambleCardsMBack2":{"type":"bitmap_lib","res":["historyE0"],"x":920,"y":293},
+
+"gambleCardsMC":{"type":"bitmap_lib","res":["historyCA"],"x":0,"y":0},
+"gambleCardsMD":{"type":"bitmap_lib","res":["historyDA"],"x":0,"y":0},
+"gambleCardsMH":{"type":"bitmap_lib","res":["historyHA"],"x":0,"y":0},
+"gambleCardsMS":{"type":"bitmap_lib","res":["historySA"],"x":0,"y":0},
+
+
+"gambleRedLabel":{"type":"text","res":[""],"x":675,"y":573,"fontText":"25px Verdana Regular","colorText":"#000000","defaultText":"0000","alignText":"center" },
+"gambleBlackLabel":{"type":"text","res":[""],"x":1372,"y":573,"fontText":"25px Verdana Regular","colorText":"#000000","defaultText":"0000","alignText":"center" },
+
+"gambleBetLabel":{"type":"text","res":[""],"x":675,"y":145,"fontText":"30px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center" },
+"gambleBet":{"type":"text","res":[""],"x":675,"y":205,"fontText":"28px Verdana Bold","colorText":"#FFFF00","defaultText":"0000","alignText":"center" },
+"gambleWinLabel":{"type":"text","res":[""],"x":1372,"y":145,"fontText":"30px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center" }	,
+"gambleWin":{"type":"text","res":[""],"x":1372,"y":205,"fontText":"28px Verdana Bold","colorText":"#FFFF00","defaultText":"0000","alignText":"center" }	,
+"gamblePrev":{"type":"text","res":[""],"x":880,"y":330,"fontText":"30px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"right" }	,
+"gambleFooter":{"type":"text","res":[""],"x":1024,"y":775,"fontText":"30px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center" }	,
+
+"gambleCardMPlace0":{"type":"place","res":[""],"x":920,"y":293 },
+"gambleCardMPlace1":{"type":"place","res":[""],"x":1016,"y":293 },
+"gambleCardMPlace2":{"type":"place","res":[""],"x":1112,"y":293 },
+"gambleCardMPlace3":{"type":"place","res":[""],"x":1208,"y":293 },
+"gambleCardMPlace4":{"type":"place","res":[""],"x":1304,"y":293 }
+
+
+},
+
+
+"rulesGame":{
+
+
+
+"rulesContainerPage1":{"type":"container","res":[""],"x":0,"y":0},
+"rulesContainerPage2":{"type":"container","res":[""],"x":0,"y":0},
+"rulesContainerPage3":{"type":"container","res":[""],"x":0,"y":0},
+"rulesContainerTop":{"type":"container","res":[""],"x":0,"y":0},
+"rulesGamePage1":{"type":"bitmap","parentC":"rulesContainerPage1","res":["background0"],"x":448,"y":142},
+
+"payTextP_1_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1190,"y":260,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"payTextP_2_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1190,"y":350,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"payTextP_3_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1190,"y":440,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"payTextP_4_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":925,"y":530,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"payTextP_5_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1385,"y":530,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"payTextP_6_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":925,"y":610,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"payTextP_7_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1385,"y":610,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"payTextP_8_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":925,"y":685,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"payTextP_9_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1385,"y":685,"fontText":"22px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center"}, 
+
+"rulesGamePage2":{"type":"bitmap","parentC":"rulesContainerPage2","res":["background1"],"x":448,"y":142},
+"rulesPage2Text1":{"type":"text","parentC":"rulesContainerPage2","res":[""],"x":1024,"y":186,"fontText":"55px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center"}, 
+"rulesPage2Text2":{"type":"text_p","parentC":"rulesContainerPage2","res":[""],"x":1024,"y":286,"fontText":"25px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center"},
+"rulesGamePage3":{"type":"bitmap","parentC":"rulesContainerPage3","res":["background2"],"x":448,"y":142},
+"rulesPage3Text1":{"type":"text","parentC":"rulesContainerPage3","res":[""],"x":1024,"y":186,"fontText":"55px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center"}, 
+"rulesPage3Text2":{"type":"text_p","parentC":"rulesContainerPage3","res":[""],"x":1024,"y":286,"fontText":"25px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center"} 
+	
+		
+	
+	
+
+	
+
+
+
+
+},
+
+"countersGame":{
+"spriteSheet":{"config":"/games/AlwaysHotCubesGTM/source/RES/UI_V2.json","file":"/games/AlwaysHotCubesGTM/source/RES/UI_V2.png"},
+"counterCredit":{"type":"text","res":[""],"x":-51,"y":9,"fontText":"52px Roboto Bold","colorText":"#FFFFFF","defaultText":"Credits","alignText":"center" },
+
+"counterTime":{"type":"text","res":[""],"x":1448,"y":998,"fontText":"30px Roboto Bold","colorText":"#FFFFFF","defaultText":"03:55","alignText":"center" },
+
+
+"counterExit":{"type":"text","res":[""],"x":1595,"y":5,"fontText":"32px Roboto Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center" },
+
+
+
+"counterCreditCnt":{"type":"text","res":[""],"x":-1,"y":9,"fontText":"52px Roboto Bold","colorText":"#FFFFFF","defaultText":"0.00","alignText":"center" },
+
+"counterBetCnt":{"type":"text_grad","res":[""],"x":1666,"y":726,"fontText":"72px Roboto Bold","colorText":["#FFE800","#FFCB00"],"defaultText":"0.00","alignText":"center" },
+"counterLinesCnt":{"type":"text_grad","res":[""],"x":683,"y":896,"fontText":"72px Roboto Bold","colorText":["#FFE800","#FFCB00"],"defaultText":"9","alignText":"center" },
+
+
+"counterInfo1":{"type":"text_0","res":[""],"x":1024,"y":852,"fontText":"78px Roboto Light","colorText":"#BFBFBE","defaultText":"","alignText":"center" },
+"counterInfo2":{"type":"text","res":[""],"x":-6,"y":-49,"fontText":"62px Roboto Bold","colorText":"#71FF00","defaultText":"","alignText":"center" },
+"counterInfo3":{"type":"text","res":[""],"x":-10,"y":-59,"fontText":"42px Roboto Bold","colorText":"#71FF00","defaultText":"","alignText":"center" },
+"counterInfo4":{"type":"text","res":[""],"x":1018,"y":881,"fontText":"42px Roboto Bold","colorText":"#71FF00","defaultText":"","alignText":"center" }
+
+
+},
+"linesGame":{
+
+
+
+
+
+
+
+
+"lnBox1_0":{"type":"bitmap","res":["leftTag1"],"x":304,"y":444},
+"lnBox1_1":{"type":"bitmap","res":["rightTag1"],"x":1621,"y":444},
+
+"lnBox2_0":{"type":"bitmap","res":["leftTag2"],"x":304,"y":231},
+"lnBox2_1":{"type":"bitmap","res":["rightTag2"],"x":1621,"y":231},
+
+
+"lnBox3_0":{"type":"bitmap","res":["leftTag3"],"x":304,"y":657},
+"lnBox3_1":{"type":"bitmap","res":["rightTag3"],"x":1621,"y":657},
+
+
+"lnBox4_0":{"type":"bitmap","res":["leftTag4"],"x":304,"y":159.1},
+"lnBox4_1":{"type":"bitmap","res":["rightTag4"],"x":1621,"y":729},
+
+
+"lnBox5_0":{"type":"bitmap","res":["leftTag5"],"x":304,"y":729},
+"lnBox5_1":{"type":"bitmap","res":["rightTag5"],"x":1621,"y":159.1},
+
+
+"lnLine1":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","segments":[{"x":414,"y":473.8},{"x":1626,"y":473.8}]},
+
+"lnLine2":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","segments":[{"x":414,"y":259.8},{"x":1626,"y":259.8}]},
+
+
+"lnLine3":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","segments":[{"x":414,"y":687.1},{"x":1626,"y":687.1}]},
+
+
+
+"lnLine4":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","segments":[{"x":414,"y":189.3},{"x":545,"y":189.3},{"x":1493.7,"y":758.1},{"x":1626,"y":758.6}]},
+
+"lnLine5":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","segments":[{"x":414,"y":758.6},{"x":552.1,"y":758.6},{"x":1500.6,"y":188.8},{"x":1626,"y":189.3}]},
+
+
+
+
+"lnBorder1":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offset":0,"segments":[{"x":0,"y":0},{"x":365,"y":0},{"x":365,"y":222},{"x":0,"y":222},{"x":0,"y":0}]},
+"lnBorder2":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offset":0,"segments":[{"x":0,"y":0},{"x":365,"y":0},{"x":365,"y":222},{"x":0,"y":222},{"x":0,"y":0}]},
+"lnBorder3":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offset":0,"segments":[{"x":0,"y":0},{"x":365,"y":0},{"x":365,"y":222},{"x":0,"y":222},{"x":0,"y":0}]},
+"lnBorder4":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offset":0,"segments":[{"x":0,"y":0},{"x":365,"y":0},{"x":365,"y":222},{"x":0,"y":222},{"x":0,"y":0}]},
+"lnBorder5":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offset":0,"segments":[{"x":0,"y":0},{"x":365,"y":0},{"x":365,"y":222},{"x":0,"y":222},{"x":0,"y":0}]},
+
+
+
+"lnBorderMin0":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offsetX":20,"offsetY":-5,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin1":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offsetX":20,"offsetY":-5,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin2":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offsetX":20,"offsetY":-5,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin3":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offsetX":20,"offsetY":-5,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin4":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offsetX":20,"offsetY":-5,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin5":{"type":"bitmap","front_c":"0xda4800","back":"0x757575","offsetX":20,"offsetY":-5,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+
+
+"lnWinSym_P_9":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_9.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_9.json","x":0,"y":0,"framerate":1},
+"lnWinSym_P_8":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_8.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_8.json","x":0,"y":0,"framerate":1},
+"lnWinSym_P_7":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_7.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_7.json","x":0,"y":0,"framerate":1},
+"lnWinSym_P_6":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_6.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_6.json","x":0,"y":0,"framerate":1},
+"lnWinSym_P_5":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_5.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_5.json","x":0,"y":0,"framerate":1},
+"lnWinSym_P_4":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_4.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_4.json","x":0,"y":0,"framerate":1},
+"lnWinSym_P_3":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_3.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_3.json","x":0,"y":0,"framerate":1},
+"lnWinSym_P_2":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_2.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_2.json","x":0,"y":0,"framerate":1},
+"lnWinSym_P_1":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"glow","res":["/games/AlwaysHotCubesGTM/source/RES/P_1.png"],"config":"/games/AlwaysHotCubesGTM/source/RES/P_1.json","x":0,"y":0,"framerate":1},
+
+
+
+
+"lnWinBack":{"type":"bitmap","res":["game"],"x":0,"y":0}
+
+
+
+
+},
+
+
+"reelsGame":{
+
+"spriteSheet":{"config":"/games/AlwaysHotCubesGTM/source/RES/SYM.json","file":"/games/AlwaysHotCubesGTM/source/RES/SYM.png"},
+
+"P_1":{"type":"sprite_lib","res":["P_1"],"x":0,"y":0},
+"P_2":{"type":"sprite_lib","res":["P_2"],"x":0,"y":0},
+"P_3":{"type":"sprite_lib","res":["P_3"],"x":0,"y":0},
+"P_4":{"type":"sprite_lib","res":["P_4"],"x":0,"y":0},
+"P_5":{"type":"sprite_lib","res":["P_5"],"x":0,"y":0},
+"P_6":{"type":"sprite_lib","res":["P_6"],"x":0,"y":0},
+"P_7":{"type":"sprite_lib","res":["P_7"],"x":0,"y":0},
+"P_8":{"type":"sprite_lib","res":["P_8"],"x":0,"y":0},
+"P_9":{"type":"sprite_lib","res":["P_9"],"x":0,"y":0}
+
+
+},
+
+
+"backGame":{
+
+
+
+},
+
+
+"uiGame":{
+
+"spriteSheet":{"config":"/games/AlwaysHotCubesGTM/source/RES/UI.json","file":"/games/AlwaysHotCubesGTM/source/RES/UI.png"},
+
+
+
+
+
+"uiButtonMenu":{"type":"button_round_rect","res":[],"width":130,"height":130,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":539,"y":896},
+"uiButtonLines":{"type":"button_round_rect","res":[],"width":130,"height":130,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":683,"y":896,"minText":true},
+"uiButtonBet":{"type":"button_circle","res":[],"width":186,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":1666,"y":726,"minText":true},
+"uiButtonMax":{"type":"button_round_rect","res":[],"width":130,"height":130,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":1357,"y":896},
+"uiButtonBetMinus":{"type":"button_round_rect_min","res":[],"width":25,"height":25,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":-57,"y":-15},
+"uiButtonBetPlus":{"type":"button_round_rect_min","res":[],"width":25,"height":25,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":57,"y":-15},
+
+
+
+"uiButtonGamble":{"type":"button_circle","res":[],"width":166,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":1666,"y":726},
+"uiButtonAuto":{"type":"button_round_rect","res":["auto-off"],"width":130,"height":130,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999","0xFFCC00"],"x":1499,"y":896,"minText":true},
+"uiButtonAutoStop":{"type":"button_round_rect","res":["auto-on"],"width":130,"height":130,"colors":["0x000000","0x338a2f","0x76fc00","0x999999","0x99FF00"],"x":1499,"y":896,"minText":true},
+"uiButtonSpin":{"type":"button_circle","res":["spin_small"],"width":200,"height":100,"colors":["0x000000","0x4eb601","0x76fc00","0x999999","0x77FF00"],"x":1666,"y":466},
+"uiButtonCollect":{"type":"button_circle","res":[],"width":200,"height":100,"colors":["0x000000","0x338a2f","0x76fc00","0x999999","0x99FF00"],"x":1666,"y":466},
+"uiButtonSkip":{"type":"button_circle","res":["fast"],"width":200,"height":100,"colors":["0x000000","0x338a2f","0x76fc00","0x999999","0x99FF00"],"x":1666,"y":466},
+"uiButtonNext":{"type":"button_round_rect","res":["payt-arrow-right"],"width":170,"height":130,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999","0xFFCC00"],"x":1201,"y":896},
+"uiButtonPrev":{"type":"button_round_rect","res":["payt-arrow-left"],"width":170,"height":130,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999","0xFFCC00"],"x":841,"y":896},
+"uiButtonClose":{"type":"button_round_rect","res":["close-icon"],"width":170,"height":130,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999","0xFFCC00"],"x":1021,"y":896},
+
+"uiButtonMenuPaytable":{"type":"button_round_rect_menu","res":["menu-paytable"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":50},
+"uiButtonMenuDeposit":{"type":"button_round_rect_menu","res":["menu-deposit"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":113},
+"uiButtonMenuSettings":{"type":"button_round_rect_menu","res":["menu-settings"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":175},
+"uiButtonMenuHelp":{"type":"button_round_rect_menu","res":["menu-help"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":238},
+"uiButtonMenuExit":{"type":"button_round_rect_menu","res":["menu-home"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":303},
+
+"uiButtonFooterExit":{"type":"button_round_rect_footer","res":["menu-home"],"width":110,"height":41,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":487,"y":1005},
+"uiButtonFooterSound0":{"type":"button_round_rect_footer","res":["settings-sound-and-music"],"width":43,"height":43,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":560,"y":1005},
+"uiButtonFooterSound1":{"type":"button_round_rect_footer","res":["settings-sound-only"],"width":43,"height":43,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":600,"y":1005},
+"uiButtonFooterSound2":{"type":"button_round_rect_footer","res":["settings-sound-off"],"width":43,"height":43,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":640,"y":1005},
+"uiButtonFooterFullOn":{"type":"button_round_rect_footer","res":["full_scr"],"width":160,"height":41,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":747,"y":1005},
+"uiButtonFooterFullOff":{"type":"button_round_rect_footer","res":["norm_scr"],"width":160,"height":41,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":747,"y":1005}
+
+
+}
+
+
+}
+

@@ -1,0 +1,343 @@
+{
+
+
+"messagesGame":{
+"messagesJackWnd":{"type":"bitmap","res":["JACK_WND"],"x":0,"y":0},
+"messagesJackWin":{"type":"text","res":[""],"x":1024,"y":585,"fontText":"50px Verdana Bold","colorText":"#FFFF66","defaultText":"5000","alignText":"center" }
+
+},
+
+"viewGame":{
+
+"spriteSheet":{"config":"/games/BlazingRichesGT/source/RES/GAME.json","file":"/games/BlazingRichesGT/source/RES/GAME.png"},
+"game":{"type":"bitmap","res":["game"],"x":0,"y":0},
+"gamefs":{"type":"bitmap","res":["gamefs"],"x":0,"y":0}
+
+},
+
+	
+"bonusGame":{
+"bonusWnd":{"type":"bitmap","res":["message0"],"x":599,"y":200},
+"bonusWndEnd":{"type":"bitmap","res":["message1"],"x":599,"y":200},
+
+"bonusWin":{"type":"text","res":[""],"x":1024,"y":71,"fontText":"25px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center" },
+"bonusWndText":{"type":"text","res":[""],"x":1024,"y":415,"fontText":"45px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center" },
+"bonusWndTextEnd":{"type":"text","res":[""],"x":1024,"y":400,"fontText":"45px Verdana Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center" }
+	
+},
+
+
+
+"gambleGame":{
+
+"spriteSheet":{"config":"/games/BlazingRichesGT/source/RES/GAMBLE.json","file":"/games/BlazingRichesGT/source/RES/GAMBLE.png"},
+
+"gambleBack":{"type":"bitmap","res":["background"],"x":418,"y":135},
+
+"gambleCardsBack1":{"type":"bitmap","res":["cardE0"],"x":924,"y":440},
+"gambleCardsBack2":{"type":"bitmap","res":["cardE1"],"x":924,"y":440},
+
+"gambleSelectRed":{"type":"button","res":["redGambleEnabled","redGambleOver","redGambleDown","redGambleDisabled"],"x":524,"y":490},
+"gambleSelectBlack":{"type":"button","res":["blackGambleEnabled","blackGambleOver","blackGambleDown","blackGambleDisabled"],"x":1220,"y":490},
+
+"gambleCardsC":{"type":"bitmap","res":["cardCA"],"x":924,"y":440},
+"gambleCardsD":{"type":"bitmap","res":["cardDA"],"x":924,"y":440},
+"gambleCardsH":{"type":"bitmap","res":["cardHA"],"x":924,"y":440},
+"gambleCardsS":{"type":"bitmap","res":["cardSA"],"x":924,"y":440},
+
+"gambleCardsMBack":{"type":"bitmap","res":["historyE0"],"x":920,"y":293},
+"gambleCardsMBack2":{"type":"bitmap_lib","res":["historyE0"],"x":920,"y":293},
+
+"gambleCardsMC":{"type":"bitmap_lib","res":["historyCA"],"x":0,"y":0},
+"gambleCardsMD":{"type":"bitmap_lib","res":["historyDA"],"x":0,"y":0},
+"gambleCardsMH":{"type":"bitmap_lib","res":["historyHA"],"x":0,"y":0},
+"gambleCardsMS":{"type":"bitmap_lib","res":["historySA"],"x":0,"y":0},
+
+
+"gambleRedLabel":{"type":"text","res":[""],"x":675,"y":573,"fontText":"25px Verdana Regular","colorText":"#000000","defaultText":"0000","alignText":"center" },
+"gambleBlackLabel":{"type":"text","res":[""],"x":1372,"y":573,"fontText":"25px Verdana Regular","colorText":"#000000","defaultText":"0000","alignText":"center" },
+
+"gambleBetLabel":{"type":"text","res":[""],"x":675,"y":145,"fontText":"30px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center" },
+"gambleBet":{"type":"text","res":[""],"x":675,"y":205,"fontText":"28px Verdana Bold","colorText":"#FFFF00","defaultText":"0000","alignText":"center" },
+"gambleWinLabel":{"type":"text","res":[""],"x":1372,"y":145,"fontText":"30px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center" }	,
+"gambleWin":{"type":"text","res":[""],"x":1372,"y":205,"fontText":"28px Verdana Bold","colorText":"#FFFF00","defaultText":"0000","alignText":"center" }	,
+"gamblePrev":{"type":"text","res":[""],"x":880,"y":330,"fontText":"30px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"right" }	,
+"gambleFooter":{"type":"text","res":[""],"x":1024,"y":775,"fontText":"30px Verdana Bold","colorText":"#FFFFFF","defaultText":"0000","alignText":"center" }	,
+
+"gambleCardMPlace0":{"type":"place","res":[""],"x":920,"y":293 },
+"gambleCardMPlace1":{"type":"place","res":[""],"x":1016,"y":293 },
+"gambleCardMPlace2":{"type":"place","res":[""],"x":1112,"y":293 },
+"gambleCardMPlace3":{"type":"place","res":[""],"x":1208,"y":293 },
+"gambleCardMPlace4":{"type":"place","res":[""],"x":1304,"y":293 }
+
+
+},
+
+
+"rulesGame":{
+
+"rulesContainerPage1":{"type":"container","res":[""],"x":0,"y":0},
+"rulesContainerPage2":{"type":"container","res":[""],"x":0,"y":0},
+"rulesContainerPage3":{"type":"container","res":[""],"x":0,"y":0},
+"rulesContainerTop":{"type":"container","res":[""],"x":0,"y":0},
+"rulesGamePage1":{"type":"bitmap","parentC":"rulesContainerPage1","res":["background0"],"x":418,"y":135},
+"payTextP_6_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1387,"y":651,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_6_4_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1387,"y":687,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_6_3_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1387,"y":723,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_6_2_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1387,"y":759,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_2_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1328,"y":421,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_2_4_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1328,"y":457,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_2_3_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1328,"y":493,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_3_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":694,"y":686,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_3_4_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":694,"y":722,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_3_3_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":694,"y":758,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_1_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":749,"y":422,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_1_4_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":749,"y":458,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextP_1_3_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":749,"y":494,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextSCAT_5_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":827,"y":220,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextSCAT_4_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":827,"y":256,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"payTextSCAT_3_def":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":827,"y":292,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"","alignText":"center"},
+"rulesPage1Text2":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1027,"y":578,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"10","alignText":"center"},
+"rulesPage1Text0":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1266,"y":233,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"15 FREE GAMES\n+ x3 MULTIPLIER","alignText":"center"},
+"rulesPage1Text1":{"type":"text","parentC":"rulesContainerPage1","res":[""],"x":1033,"y":353,"fontText":"22px Verdana Bold","colorText":"#FFFF00","defaultText":"SUBSTITUTES FOR ALL SYMBOLS\nEXCEPT SCATTERS. DOUBLES WIN\nWHEN SUBSTITUTING.","alignText":"center"},
+"rulesGamePage2":{"type":"bitmap","parentC":"rulesContainerPage2","res":["background1"],"x":417.5,"y":130}, 
+"rulesPage2Text1":{"type":"text","parentC":"rulesContainerPage2","res":[""],"x":1024,"y":186,"fontText":"55px Verdana Bold","colorText":"#FFFF00","defaultText":"0000","alignText":"center"}, 
+"rulesPage2Text2":{"type":"text_p","parentC":"rulesContainerPage2","res":[""],"x":1024,"y":286,"fontText":"25px Verdana Bold","colorText":"#FFFF00","defaultText":"0000","alignText":"center"}, 
+"rulesGamePage3":{"type":"bitmap","parentC":"rulesContainerPage3","res":["background2"],"x":417.5,"y":130}, 
+"rulesPage3Text1":{"type":"text","parentC":"rulesContainerPage3","res":[""],"x":1024,"y":186,"fontText":"55px Verdana Bold","colorText":"#FFFF00","defaultText":"0000","alignText":"center"}, 
+"rulesPage3Text2":{"type":"text_p","parentC":"rulesContainerPage3","res":[""],"x":1024,"y":286,"fontText":"25px Verdana Bold","colorText":"#FFFF00","defaultText":"0000","alignText":"center"}
+		
+	
+	
+
+
+
+},
+
+"countersGame":{
+"spriteSheet":{"config":"/games/BlazingRichesGT/source/RES/UI_V2.json","file":"/games/BlazingRichesGT/source/RES/UI_V2.png"},
+"counterCredit":{"type":"text","res":[""],"x":-51,"y":-1,"fontText":"42px Roboto Bold","colorText":"#FFFFFF","defaultText":"Credits","alignText":"center" },
+
+"counterTime":{"type":"text","res":[""],"x":1448,"y":998,"fontText":"30px Roboto Bold","colorText":"#FFFFFF","defaultText":"03:55","alignText":"center" },
+
+
+"counterExit":{"type":"text","res":[""],"x":1595,"y":5,"fontText":"32px Roboto Bold","colorText":"#FFFFFF","defaultText":"","alignText":"center" },
+
+"counterJackCnt":{"type":"text","res":[""],"x":1454,"y":77,"fontText":"56px Verdana Bold","colorText":"#FFFF00","defaultText":"10000.00","alignText":"center" },
+
+"counterCreditCnt":{"type":"text","res":[""],"x":-1,"y":-1,"fontText":"42px Roboto Bold","colorText":"#FFFFFF","defaultText":"0.00","alignText":"center" },
+
+"counterBetCnt":{"type":"text_grad","res":[""],"x":725,"y":896,"fontText":"55px Roboto Bold","colorText":["#FFE800","#FFCB00"],"defaultText":"0.00","alignText":"center" },
+"counterLinesCnt":{"type":"text_grad","res":[""],"x":588,"y":896,"fontText":"55px Roboto Bold","colorText":["#FFE800","#FFCB00"],"defaultText":"9","alignText":"center" },
+
+
+"counterInfo1":{"type":"text_0","res":[""],"x":1024,"y":862,"fontText":"60px Roboto Light","colorText":"#BFBFBE","defaultText":"","alignText":"center" },
+"counterInfo2":{"type":"text","res":[""],"x":-6,"y":-49,"fontText":"58px Roboto Bold","colorText":"#71FF00","defaultText":"","alignText":"center" },
+"counterInfo3":{"type":"text","res":[""],"x":-10,"y":-59,"fontText":"38px Roboto Bold","colorText":"#71FF00","defaultText":"","alignText":"center" },
+"counterInfo4":{"type":"text","res":[""],"x":1018,"y":881,"fontText":"38px Roboto Bold","colorText":"#71FF00","defaultText":"","alignText":"center" }
+
+
+},
+"linesGame":{
+
+
+
+
+
+
+
+
+"lnBox1_0":{"type":"bitmap","res":["leftTag1"],"x":324.8,"y":447},
+"lnBox1_1":{"type":"bitmap","res":["rightTag1"],"x":1643.8,"y":447},
+
+"lnBox2_0":{"type":"bitmap","res":["leftTag2"],"x":324.8,"y":256},
+"lnBox2_1":{"type":"bitmap","res":["rightTag2"],"x":1643.8,"y":256},
+
+
+"lnBox3_0":{"type":"bitmap","res":["leftTag3"],"x":324.8,"y":640},
+"lnBox3_1":{"type":"bitmap","res":["rightTag3"],"x":1643.8,"y":640},
+
+
+"lnBox4_0":{"type":"bitmap","res":["leftTag4"],"x":324.8,"y":191.1},
+"lnBox4_1":{"type":"bitmap","res":["rightTag4"],"x":1643.8,"y":191.1},
+
+
+"lnBox5_0":{"type":"bitmap","res":["leftTag5"],"x":324.8,"y":705},
+"lnBox5_1":{"type":"bitmap","res":["rightTag5"],"x":1643.8,"y":705},
+
+
+"lnBox6_0":{"type":"bitmap","res":["leftTag6"],"x":324.8,"y":383.1},
+"lnBox6_1":{"type":"bitmap","res":["rightTag6"],"x":1643.8,"y":382},
+
+
+"lnBox7_0":{"type":"bitmap","res":["leftTag7"],"x":324.8,"y":510},
+"lnBox7_1":{"type":"bitmap","res":["rightTag7"],"x":1643.8,"y":510},
+
+
+"lnBox8_0":{"type":"bitmap","res":["leftTag8"],"x":324.8,"y":575},
+"lnBox8_1":{"type":"bitmap","res":["rightTag8"],"x":1643.8,"y":319},
+
+
+"lnBox9_0":{"type":"bitmap","res":["leftTag9"],"x":324.8,"y":319},
+"lnBox9_1":{"type":"bitmap","res":["rightTag9"],"x":1643.8,"y":575},
+
+"lnBox10_0":{"type":"bitmap","res":["leftTag10"],"x":324.8,"y":770},
+"lnBox10_1":{"type":"bitmap","res":["rightTag10"],"x":1643.8,"y":130},
+
+
+"lnLine1":{"type":"bitmap","front_c":"0x4999FD","back":"0x3881DD","segments":[{"x":392,"y":474.3},{"x":1800,"y":474.3}]},
+
+"lnLine2":{"type":"bitmap","front_c":"0xD51C1C","back":"0xAF0C0B","segments":[{"x":392,"y":282.1},{"x":1800,"y":282.1}]},
+
+
+"lnLine3":{"type":"bitmap","front_c":"0x269012","back":"0x207906","segments":[{"x":392,"y":666.5},{"x":1800,"y":666.5}]},
+
+
+
+"lnLine4":{"type":"bitmap","front_c":"0xEEDC17","back":"0xC7B707","segments":[{"x":392,"y":218.6},{"x":523.1,"y":218.6},{"x":1023.1,"y":718},{"x":1522.6,"y":218.6},{"x":1656,"y":218.6}]},
+
+"lnLine5":{"type":"bitmap","front_c":"0xFF70D3","back":"0xDF5EB7","segments":[{"x":392,"y":730.1},{"x":523.42,"y":730.1},{"x":1023.1,"y":231.6},{"x":1523.1,"y":730.1},{"x":1656,"y":730.1}]},
+
+
+"lnLine6":{"type":"bitmap","front_c":"0xD1FE68","back":"0x9FC138","segments":[{"x":392,"y":410.4},{"x":471.4,"y":410.4},{"x":791.4,"y":730.4},{"x":1255.1,"y":730.4},{"x":1575.1,"y":410.4},{"x":1656,"y":410.4}]},
+
+
+
+"lnLine7":{"type":"bitmap","front_c":"0xF6BCAB","back":"0xD58978","segments":[{"x":392,"y":538.1},{"x":471.4,"y":538.1},{"x":790.9,"y":218.6},{"x":1255.1,"y":218.6},{"x":1575.1,"y":538.1},{"x":1656,"y":538.1}]},
+
+"lnLine8":{"type":"bitmap","front_c":"0xAFD7DC","back":"0x83A5B3","segments":[{"x":392,"y":602.4},{"x":895.1,"y":602.4},{"x":1151.1,"y":346.6},{"x":1656,"y":346.6}]},
+
+
+"lnLine9":{"type":"bitmap","front_c":"0xFFC473","back":"0xE1953E","segments":[{"x":392,"y":346.4},{"x":895.1,"y":346.4},{"x":1151.1,"y":602.4},{"x":1656,"y":602.4}]},
+
+"lnLine10":{"type":"bitmap","front_c":"0xEBB0FF","back":"0xC77FD5","segments":[{"x":392,"y":794.4},{"x":490.4,"y":794.4},{"x":777.6,"y":506.9},{"x":1203.3,"y":506.9},{"x":1555.1,"y":154.6},{"x":1656,"y":154.6}]},
+
+
+
+
+
+"lnBorder1":{"type":"bitmap","front_c":"0x4999FD","back":"0x3881DD","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder2":{"type":"bitmap","front_c":"0xD51C1C","back":"0xAF0C0B","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder3":{"type":"bitmap","front_c":"0x5BAC4D","back":"0x207906","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder4":{"type":"bitmap","front_c":"0xEEDC17","back":"0xC7B707","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder5":{"type":"bitmap","front_c":"0xFF70D3","back":"0xDF5EB7","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder6":{"type":"bitmap","front_c":"0xD1FE68","back":"0x9FC138","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder7":{"type":"bitmap","front_c":"0xF6BCAB","back":"0xD58978","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder8":{"type":"bitmap","front_c":"0xAFD7DC","back":"0x83A5B3","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder9":{"type":"bitmap","front_c":"0xFFC473","back":"0xE1953E","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder10":{"type":"bitmap","front_c":"0xEBB0FF","back":"0xC77FD5","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+"lnBorder0":{"type":"bitmap","front_c":"0xFAC470","back":"0xDB923C","offset":4,"segments":[{"x":0,"y":0},{"x":214,"y":0},{"x":214,"y":214},{"x":0,"y":214},{"x":0,"y":0}]},
+
+
+
+"lnBorderMin0":{"type":"bitmap","front_c":"0xFAC470","back":"0xDB923C","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin1":{"type":"bitmap","front_c":"0x4999FD","back":"0x3881DD","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin2":{"type":"bitmap","front_c":"0xD51C1C","back":"0xAF0C0B","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin3":{"type":"bitmap","front_c":"0x5BAC4D","back":"0x207906","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin4":{"type":"bitmap","front_c":"0xEEDC17","back":"0xC7B707","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin5":{"type":"bitmap","front_c":"0xFF70D3","back":"0xDF5EB7","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin6":{"type":"bitmap","front_c":"0xD1FE68","back":"0x9FC138","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin7":{"type":"bitmap","front_c":"0xF6BCAB","back":"0xD58978","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin8":{"type":"bitmap","front_c":"0xAFD7DC","back":"0x83A5B3","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin9":{"type":"bitmap","front_c":"0xFFC473","back":"0xE1953E","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+"lnBorderMin10":{"type":"bitmap","front_c":"0xEBB0FF","back":"0xC77FD5","offsetX":20,"offsetY":-7,"segments":[{"x":0,"y":0},{"x":50,"y":0},{"x":50,"y":35},{"x":0,"y":35},{"x":0,"y":0}]},
+
+"lnWinSym_P_9":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_9.png"],"config":"/games/BlazingRichesGT/source/RES/P_9.json","x":0,"y":0,"framerate":20},
+"lnWinSym_P_8":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_8.png"],"config":"/games/BlazingRichesGT/source/RES/P_8.json","x":0,"y":0,"framerate":20},
+"lnWinSym_P_7":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_7.png"],"config":"/games/BlazingRichesGT/source/RES/P_7.json","x":0,"y":0,"framerate":20},
+"lnWinSym_P_6":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_6.png"],"config":"/games/BlazingRichesGT/source/RES/P_6.json","x":0,"y":0,"framerate":20},
+"lnWinSym_P_5":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_5.png"],"config":"/games/BlazingRichesGT/source/RES/P_5.json","x":0,"y":0,"framerate":20},
+"lnWinSym_P_4":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_4.png"],"config":"/games/BlazingRichesGT/source/RES/P_4.json","x":0,"y":0,"framerate":20},
+"lnWinSym_P_3":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_3.png"],"config":"/games/BlazingRichesGT/source/RES/P_3.json","x":0,"y":0,"framerate":20},
+"lnWinSym_P_2":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_2.png"],"config":"/games/BlazingRichesGT/source/RES/P_2.json","x":0,"y":0,"framerate":20},
+"lnWinSym_P_1":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/P_1.png"],"config":"/games/BlazingRichesGT/source/RES/P_1.json","x":0,"y":0,"framerate":20},
+"lnWinSym_SCAT":{"type":"symbol_sprite_lib","anim_mode":"preset","anim_effect":"","res":["/games/BlazingRichesGT/source/RES/SCAT.png"],"config":"/games/BlazingRichesGT/source/RES/SCAT.json","x":0,"y":0,"framerate":20},
+
+
+
+
+"lnWinBack":{"type":"bitmap","res":["game"],"x":0,"y":0}
+
+
+
+
+},
+
+
+"reelsGame":{
+
+"spriteSheet":{"config":"/games/BlazingRichesGT/source/RES/SYM.json","file":"/games/BlazingRichesGT/source/RES/SYM.png"},
+
+"P_1":{"type":"sprite_lib","res":["P_1"],"x":0,"y":0},
+"P_2":{"type":"sprite_lib","res":["P_2"],"x":0,"y":0},
+"P_3":{"type":"sprite_lib","res":["P_3"],"x":0,"y":0},
+"P_4":{"type":"sprite_lib","res":["P_4"],"x":0,"y":0},
+"P_5":{"type":"sprite_lib","res":["P_5"],"x":0,"y":0},
+"P_6":{"type":"sprite_lib","res":["P_6"],"x":0,"y":0},
+"P_7":{"type":"sprite_lib","res":["P_7"],"x":0,"y":0},
+"P_8":{"type":"sprite_lib","res":["P_8"],"x":0,"y":0},
+"P_9":{"type":"sprite_lib","res":["P_9"],"x":0,"y":0},
+"SCAT":{"type":"sprite_lib","res":["SCAT"],"x":0,"y":0}
+
+
+
+},
+
+
+"backGame":{
+
+
+
+},
+
+
+"uiGame":{
+
+"spriteSheet":{"config":"/games/BlazingRichesGT/source/RES/UI.json","file":"/games/BlazingRichesGT/source/RES/UI.png"},
+
+
+
+
+
+"uiButtonMenu":{"type":"button_round_rect","res":[],"width":100,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":477,"y":896},
+"uiButtonLines":{"type":"button_round_rect","res":[],"width":100,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":587,"y":896,"minText":true},
+"uiButtonBet":{"type":"button_round_rect","res":[],"width":156,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":726,"y":896,"minText":true},
+"uiButtonMax":{"type":"button_round_rect","res":[],"width":100,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":1295,"y":896},
+"uiButtonBetMinus":{"type":"button_round_rect_min","res":[],"width":25,"height":25,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":-57,"y":-15},
+"uiButtonBetPlus":{"type":"button_round_rect_min","res":[],"width":25,"height":25,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":57,"y":-15},
+
+
+
+"uiButtonGamble":{"type":"button_round_rect","res":[],"width":156,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999"],"x":726,"y":896},
+"uiButtonAuto":{"type":"button_round_rect","res":["auto-off"],"width":100,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999","0xFFCC00"],"x":1405,"y":896,"minText":true},
+"uiButtonAutoStop":{"type":"button_round_rect","res":["auto-on"],"width":100,"height":100,"colors":["0x000000","0x338a2f","0x76fc00","0x999999","0x99FF00"],"x":1405,"y":896,"minText":true},
+"uiButtonSpin":{"type":"button_round_rect","res":["spin_small"],"width":156,"height":100,"colors":["0x000000","0x4eb601","0x76fc00","0x999999","0x77FF00"],"x":1543,"y":896},
+"uiButtonCollect":{"type":"button_round_rect","res":[],"width":156,"height":100,"colors":["0x000000","0x338a2f","0x76fc00","0x999999","0x99FF00"],"x":1543,"y":896},
+"uiButtonSkip":{"type":"button_round_rect","res":["fast"],"width":156,"height":100,"colors":["0x000000","0x338a2f","0x76fc00","0x999999","0x99FF00"],"x":1543,"y":896},
+"uiButtonNext":{"type":"button_round_rect","res":["payt-arrow-right"],"width":140,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999","0xFFCC00"],"x":1166,"y":896},
+"uiButtonPrev":{"type":"button_round_rect","res":["payt-arrow-left"],"width":140,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999","0xFFCC00"],"x":883,"y":896},
+"uiButtonClose":{"type":"button_round_rect","res":["close-icon"],"width":140,"height":100,"colors":["0x000000","0x9c8740","0xFFCC00","0x999999","0xFFCC00"],"x":1024,"y":896},
+
+"uiButtonMenuPaytable":{"type":"button_round_rect_menu","res":["menu-paytable"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":50},
+"uiButtonMenuDeposit":{"type":"button_round_rect_menu","res":["menu-deposit"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":113},
+"uiButtonMenuSettings":{"type":"button_round_rect_menu","res":["menu-settings"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":175},
+"uiButtonMenuHelp":{"type":"button_round_rect_menu","res":["menu-help"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":238},
+"uiButtonMenuExit":{"type":"button_round_rect_menu","res":["menu-home"],"width":240,"height":50,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":131,"y":303},
+
+"uiButtonFooterExit":{"type":"button_round_rect_footer","res":["menu-home"],"width":110,"height":41,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":487,"y":1005},
+"uiButtonFooterSound0":{"type":"button_round_rect_footer","res":["settings-sound-and-music"],"width":43,"height":43,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":560,"y":1005},
+"uiButtonFooterSound1":{"type":"button_round_rect_footer","res":["settings-sound-only"],"width":43,"height":43,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":600,"y":1005},
+"uiButtonFooterSound2":{"type":"button_round_rect_footer","res":["settings-sound-off"],"width":43,"height":43,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":640,"y":1005},
+"uiButtonFooterFullOn":{"type":"button_round_rect_footer","res":["full_scr"],"width":160,"height":41,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":747,"y":1005},
+"uiButtonFooterFullOff":{"type":"button_round_rect_footer","res":["norm_scr"],"width":160,"height":41,"colors":["0x000000","0xEABB00","0xFFE700","0x999999","0xFFCC00"],"x":747,"y":1005},
+
+"uiFooterImg0":{"type":"bitmap","res":["clock"],"x":1387,"y":998},
+"uiFooterImg1":{"type":"bitmap","res":["novo-logo"],"x":1513,"y":1000}
+
+
+
+}
+
+
+}
+
